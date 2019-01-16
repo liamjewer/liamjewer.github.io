@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Liam Jewer - Photography</title>
+      <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+      <script src="Main.js"></script>
+      <link rel="stylesheet" href="Main.css">
+      <link rel="stylesheet" href="Photography.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+      <link rel="icon" type="image/png" href="res\favicon.png">
+</head>
+
+<body>
+      <div id="nav">
+            <ul id="linksL">
+                  <li><a href="home.html">Home</a></li><!--
+                  --><li><a href="Software.html">Software</a></li>
+            </ul>
+            <img src="res\Nav_Logo.svg" alt="Logo" id="nav_logo">
+            <ul id="linksR">
+                  <li><a href="Photography.html">Photography</a></li><!--
+                  --><li><a href="about.html">About</a></li>
+            </ul>
+      </div>
+
+      <div id="content">
+      <h1>Photography</h1>
+      <h3>Some photos that I have taken will be posted here</h3>
+      </div>
+
+      <div id="form">
+      <button type="button" id="toggle" onclick="toggle(this);"><p>show filters</p></button>
+
+      <form id="filter" action="#">
+            <div id = "inputs">
+            <div class="input">
+                  <input type="checkbox" class="filters" value="nature" id="cbx" style="display: none;">
+                  <label for = "cbx" class="check">
+                        <svg width="18px" height="18px" viewBox="0 0 18 18">
+                              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                              <polyline points="1 9 7 14 15 4"></polyline>
+                        </svg>
+                        Nature
+                  </label>
+            </div>
+            <div class="input">
+                  <input type="checkbox" class="filters" value="architecture" id="cbx1" style="display: none;">
+                  <label for = "cbx1" class="check">
+                        <svg width="18px" height="18px" viewBox="0 0 18 18">
+                              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                              <polyline points="1 9 7 14 15 4"></polyline>
+                        </svg>
+                        Architecture
+                  </label>
+            </div>
+            <div class="input">
+                  <input type="checkbox" class="filters" value="urban" id="cbx2" style="display: none;">
+                  <label for = "cbx2" class="check">
+                        <svg width="18px" height="18px" viewBox="0 0 18 18">
+                              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                              <polyline points="1 9 7 14 15 4"></polyline>
+                        </svg>
+                        Urban
+                  </label>
+            </div>
+            <div class="input">
+                  <input type="checkbox" class="filters" value="landscape" id="cbx3" style="display: none;">
+                  <label for = "cbx3" class="check">
+                        <svg width="18px" height="18px" viewBox="0 0 18 18">
+                              <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                              <polyline points="1 9 7 14 15 4"></polyline>
+                        </svg>
+                        Landscape
+                  </label>
+            </div>
+            </div>
+            <br>
+            <button type="button" id="refresh" onclick="filter();"><p>Refresh results....</p></button>
+            <br>
+            <button type="button" id="reset" onclick="showall();"><p>reset</p></button>
+      </form>
+      </div>
+
+      <div id="photos" class = "quizFrame quizFrame1">
+      <img src="res\photography\1.JPG" onclick="on(this);" class="nature">
+      <img src="res\photography\2.JPG" onclick="on(this);" class="nature">
+      <img src="res\photography\3.JPG" onclick="on(this);" class="nature">
+      <img src="res\photography\4.JPG" onclick="on(this);" class="nature">
+      <img src="res\photography\5.JPG" onclick="on(this);" class="architecture urban">
+      <img src="res\photography\6.JPG" onclick="on(this);" class="urban landscape">
+      <img src="res\photography\7.JPG" onclick="on(this);" class="nature">
+      <img src="res\photography\8.JPG" onclick="on(this);" class="landscape nature">
+      <img src="res\photography\9.JPG" onclick="on(this);" class="landscape nature">
+      <img src="res\photography\10.JPG" onclick="on(this);" class="landscape nature">
+      <img src="res\photography\11.JPG" onclick="on(this);" class="nature">
+      <img src="res\photography\12.JPG" onclick="on(this);" class="nature">
+      <img src="res\photography\13.JPG" onclick="on(this);" class="nature">
+      <img src="res\photography\14.JPG" onclick="on(this);" class="nature">
+      <img src="res\photography\15.JPG" onclick="on(this);" class="nature">
+      <img src="res\photography\16.JPG" onclick="on(this);" class="urban">
+      <img src="res\photography\17.JPG" onclick="on(this);" class="urban landscape nature">
+      <img src="res\photography\18.JPG" onclick="on(this);" class="landscape urban">
+      <img src="res\photography\19.JPG" onclick="on(this);" class="landscape urban">
+      <img src="res\photography\20.JPG" onclick="on(this);" class="landscape nature">
+      <img src="res\photography\21.JPG" onclick="on(this);" class="landscape">
+      <img src="res\photography\22.JPG" onclick="on(this);" class="urban">
+      <img src="res\photography\23.JPG" onclick="on(this);" class="urban">
+      </div>
+
+      <div id="overlay" onclick="off();">
+      <img id="enlarged">
+      </div>
+
+      <div id = "footer">
+            <P>© 2018</P>
+            <div id="ico">
+                  <a href="https://www.instagram.com/liams_photoz/?hl=en"><i class="fab fa-instagram icon"></i></a>
+                  <a href="mailto: Liam@jewer.ca"><i class="fas fa-at icon"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100011741945897"><i class="fab fa-facebook-square icon"></i></a>
+                  <a href="https://www.linkedin.com/in/liam-jewer-544b7915b/"><i class="fab fa-linkedin icon"></i></a>
+            </div>
+      </div>
+</body>
+
+<script type="text/javascript" src="photography.js"></script>
+
+</html>

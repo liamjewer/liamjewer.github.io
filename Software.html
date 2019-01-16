@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Liam Jewer - Software</title>
+      <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+      <script src="Main.js"></script>
+      <link rel="stylesheet" href="Main.css">
+      <link rel="stylesheet" href="Software.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+      <link rel="icon" type="image/png" href="res\favicon.png">
+</head>
+<body>
+      <div id="nav">
+            <ul id="linksL">
+                  <li><a href="home.html">Home</a></li><!--
+                  --><li><a href="Software.html">Software</a></li>
+            </ul>
+            <img src="res\Nav_Logo.svg" alt="Logo" id="nav_logo">
+            <ul id="linksR">
+                  <li><a href="Photography.html">Photography</a></li><!--
+                  --><li><a href="about.html">About</a></li>
+            </ul>
+      </div>
+
+      <div id="programming">
+            <div id = "holder">
+                  <input type="text" placeholder="Search This Page..." class="Search" id="input">
+                  <button id="Searchbtn" onclick="search();"></img><i class="fas fa-search"></i></button>
+            </div>
+
+            <div id="form">
+                  <button type="button" id="toggle" onclick="toggle(this);"><p>show filters</p></button>
+                  <button type="button" id="reset" onclick="showall();"><p>reset</p></button>
+            
+                  <form id="filter" action="#">
+                        <div id = "inputs">
+                        <div class="input">
+                              <input type="checkbox" class="filters" value="java" id="cbx" style="display: none;">
+                              <label for = "cbx" class="check">
+                                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                          <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                                          <polyline points="1 9 7 14 15 4"></polyline>
+                                    </svg>
+                                    Java
+                              </label>
+                        </div>
+                        <div class="input">
+                              <input type="checkbox" class="filters" value="webpage" id="cbx1" style="display: none;">
+                              <label for = "cbx1" class="check">
+                                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                          <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                                          <polyline points="1 9 7 14 15 4"></polyline>
+                                    </svg>
+                                    Webpage
+                              </label>
+                        </div>
+                        </div>
+                  </form>
+                  </div>
+
+            <div class="box java" id="fll">
+                  <div class="text">
+                        <h2 class="name">FLL Timer application</h2>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis venenatis eros. Nam fermentum ligula quis malesuada imperdiet. Nullam tellus libero, viverra eget hendrerit vitae, iaculis a ante. Fusce condimentum, turpis id elementum pulvinar, eros mi ultrices ligula, a condimentum metus risus vel augue. Nam aliquam enim commodo efficitur fringilla. Aenean dignissim massa nec laoreet accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec vel iaculis tellus. Morbi bibendum vulputate mollis. Duis quis tellus dapibus, volutpat odio condimentum, imperdiet neque. Praesent sed sollicitudin metus, sed finibus urna. Vestibulum ac velit at mi tempor sollicitudin at sit amet est. Nam fringilla iaculis lacinia. Ut et tortor sodales, porttitor purus quis, posuere augue.</p>
+                  </div>
+                   <img src="res\FLL1.png" id="imgFLL">
+            </div>
+
+            <div class="box java" id="snake">
+                  <div class="text">
+                        <h2 class="name">Modified Snake Game</h2>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis venenatis eros. Nam fermentum ligula quis malesuada imperdiet. Nullam tellus libero, viverra eget hendrerit vitae, iaculis a ante. Fusce condimentum, turpis id elementum pulvinar, eros mi ultrices ligula, a condimentum metus risus vel augue. Nam aliquam enim commodo efficitur fringilla. Aenean dignissim massa nec laoreet accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec vel iaculis tellus. Morbi bibendum vulputate mollis. Duis quis tellus dapibus, volutpat odio condimentum, imperdiet neque. Praesent sed sollicitudin metus, sed finibus urna. Vestibulum ac velit at mi tempor sollicitudin at sit amet est. Nam fringilla iaculis lacinia. Ut et tortor sodales, porttitor purus quis, posuere augue.</p>
+                  </div>
+                  <img src="res\Snake.png">
+            </div>
+
+            <div class="box java" id="xo">
+                  <div class="text">
+                        <h2 class="name">Console X's and O's</h2>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis venenatis eros. Nam fermentum ligula quis malesuada imperdiet. Nullam tellus libero, viverra eget hendrerit vitae, iaculis a ante. Fusce condimentum, turpis id elementum pulvinar, eros mi ultrices ligula, a condimentum metus risus vel augue. Nam aliquam enim commodo efficitur fringilla. Aenean dignissim massa nec laoreet accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec vel iaculis tellus. Morbi bibendum vulputate mollis. Duis quis tellus dapibus, volutpat odio condimentum, imperdiet neque. Praesent sed sollicitudin metus, sed finibus urna. Vestibulum ac velit at mi tempor sollicitudin at sit amet est. Nam fringilla iaculis lacinia. Ut et tortor sodales, porttitor purus quis, posuere augue.</p>
+                  </div>
+                  <div class="imageScroll"><img src="res\XO.png"></div>
+            </div>
+
+            <div class="box webpage" id="sitestart">
+                  <div class="text">
+                        <h2 class="name">Sitestart</h2>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis venenatis eros. Nam fermentum ligula quis malesuada imperdiet. Nullam tellus libero, viverra eget hendrerit vitae, iaculis a ante. Fusce condimentum, turpis id elementum pulvinar, eros mi ultrices ligula, a condimentum metus risus vel augue. Nam aliquam enim commodo efficitur fringilla. Aenean dignissim massa nec laoreet accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec vel iaculis tellus. Morbi bibendum vulputate mollis. Duis quis tellus dapibus, volutpat odio condimentum, imperdiet neque. Praesent sed sollicitudin metus, sed finibus urna. Vestibulum ac velit at mi tempor sollicitudin at sit amet est. Nam fringilla iaculis lacinia. Ut et tortor sodales, porttitor purus quis, posuere augue.</p>
+                  </div>
+                  <img src="res\sitestart.svg">
+            </div>
+
+            <div class="box webpage" id="lj">
+                  <div class="text">
+                        <h2 class="name">Portfolio V1</h2>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis venenatis eros. Nam fermentum ligula quis malesuada imperdiet. Nullam tellus libero, viverra eget hendrerit vitae, iaculis a ante. Fusce condimentum, turpis id elementum pulvinar, eros mi ultrices ligula, a condimentum metus risus vel augue. Nam aliquam enim commodo efficitur fringilla. Aenean dignissim massa nec laoreet accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec vel iaculis tellus. Morbi bibendum vulputate mollis. Duis quis tellus dapibus, volutpat odio condimentum, imperdiet neque. Praesent sed sollicitudin metus, sed finibus urna. Vestibulum ac velit at mi tempor sollicitudin at sit amet est. Nam fringilla iaculis lacinia. Ut et tortor sodales, porttitor purus quis, posuere augue.</p>
+                  </div>
+                  <img src="res\lj.png">
+            </div>
+      </div>
+
+      <div id = "footer">
+            <P>© 2018</P>
+            <div id="ico">
+                  <a href="https://www.instagram.com/liams_photoz/?hl=en"><i class="fab fa-instagram icon"></i></a>
+                  <a href="mailto: Liam@jewer.ca"><i class="fas fa-at icon"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100011741945897"><i class="fab fa-facebook-square icon"></i></a>
+                  <a href="https://www.linkedin.com/in/liam-jewer-544b7915b/"><i class="fab fa-linkedin icon"></i></a>
+            </div>
+      </div>
+      <script>
+            var hidden = true;
+            var filters = document.getElementsByClassName("filters");
+            var hidden = true;
+            var nonechecked = true;
+            var filterResults = [];
+
+            function searchani(){
+                  var holder = document.getElementById("holder");
+                  holder.style.transition = "all 2s ease";
+                  holder.style.backgroundPosition = "left bottom";
+                  window.setTimeout(() => {
+                        holder.style.transition = "none";
+                        holder.style.backgroundPosition = "right bottom";
+                  }, 2000);
+            }
+            var img = document.getElementById("imgFLL");
+            var boxelement = document.getElementsByClassName("box");
+            var i = 1;
+            $.setInterval(function() {
+                  img.src = "res/FLL" + i + ".png";
+                  if (i == 4) {
+                        i = 1;
+                  }else{
+                        i++;
+                  }
+            }, 5000);
+
+            function search(){
+                  var input = document.getElementById("input").value.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+                  var inputElement = document.getElementById("input");
+                  inputElement.placeholder = "Search This Page...";
+                  var keywords = input.split(" ");
+                  var parent = null;
+                  var currentProject = null;
+                  var results = [];
+                  var name = document.getElementsByClassName("name");
+                  var para = document.getElementsByClassName("para");
+                  var words = null;
+                  var box = Array.from(document.getElementsByClassName("box"));
+                  var programming = document.getElementById("programming");
+                  var filters = document.getElementsByClassName("filters");
+                  var nonechecked = true;
+                  var filterResults = [];
+
+
+                  if(input != ""){
+                        var p = document.createElement("p");
+                        var br = document.createElement("br");
+                        var node = document.createTextNode("We're sorry, your results could not be found on this page.");
+                        var node2 = document.createTextNode("Please ensure that everything is spelled correctly to find results.");
+                        p.appendChild(node);
+                        p.appendChild(br);
+                        p.appendChild(node2);
+                        p.id = "NoResultsFound";
+                        
+                        filter();
+                        for (var i = 0; i < keywords.length; i++) {
+                              for (var n = 0; n < name.length; n++) {
+                                    words = name[n].innerHTML.split(" ");
+                                    for (var y = 0; y < words.length; y++) {
+                                          if(keywords[i] == words[y].toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"")){
+                                                currentProject = name[n].parentNode.parentNode.id;
+                                                if (!results.includes(currentProject)) {
+                                                      results.push(currentProject);
+                                                }
+                                          }
+                                    }
+                              }
+                              for (var a = 0; a < para.length; a++) {
+                                    words = para[a].innerHTML.split(" ");
+                                    for (var b = 0; b < words.length; b++) {
+                                          if(keywords[i] == words[b].toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"")){
+                                                currentProject = name[a].parentNode.parentNode.id;
+                                                if (!results.includes(currentProject) && !currentProject.style.display == "none") {
+                                                      results.push(currentProject);
+                                                }
+                                          }
+                                    }
+                              }
+                        }
+                        if(results.length == 0 && document.getElementById("NoResultsFound") == null){
+                              for (var c = 0; c < box.length; c++) {
+                                    document.getElementById(box[c].id).style.display = "none";
+                              }
+                              programming.appendChild(p);
+                        }else{
+                              if (document.getElementById("NoResultsFound") != null && results.length != 0) {
+                                    programming.removeChild(document.getElementById("NoResultsFound"));
+                              }
+                              for (var d = 0; d < box.length; d++) {
+                                    if (!results.includes(box[d].id)) {
+                                          document.getElementById(box[d].id).style.display = "none";
+                                    }
+                              }
+                        }
+                  }else{
+                        for (var i = 0; i < filters.length; i++) {
+                              if(filters[i].checked){
+                                    nonechecked = false;
+                              }
+                        }
+                        if (!nonechecked) {
+                              filter();
+                        }else{
+                              inputElement.placeholder = "Please Enter Keywords To Search...";
+                        }
+                  }
+                  var noneshown = true;
+                  for (let i = 0; i < box.length; i++) {
+                        if(box[i].style.display != "none"){
+                              noneshown = false;
+                        }
+                  }
+                  if(noneshown && document.getElementById("NoResultsFound") == null){
+                        programming.appendChild(p);
+                  }
+                  searchani();
+            }
+
+            var photos = document.getElementById("programming");
+            var boxs = photos.getElementsByClassName("box");
+            function toggle(btn){
+                  if (hidden) {
+                        document.getElementById("filter").style.display = "block";
+                        hidden = false;
+                        btn.getElementsByTagName("p")[0].innerHTML = "hide filters";
+                  }else{
+                        document.getElementById("filter").style.display = "none";
+                        hidden = true;
+                        btn.getElementsByTagName("p")[0].innerHTML = "show filters";
+                  }
+            }
+
+                  function filter(){
+                        for (var i = 0; i < filters.length; i++) {
+                              if(filters[i].checked){
+                                    nonechecked = false;
+                              }else{
+
+                              }
+                        }
+                        if(!nonechecked){
+                              showall();
+                              for (var i = 0; i < filters.length; i++) {
+                                    if(!filters[i].checked){
+                                          for (let y = 0; y < document.getElementsByClassName(filters[i].value).length; y++) {
+                                                document.getElementsByClassName(filters[i].value)[y].style.display = "none";
+                                          }
+                                    }
+                              }
+                        }
+                        searchani();
+                  }
+
+                  function showall(){
+                        for (let i = 0; i < boxs.length; i++) {
+                              boxs[i].style.display = "inline-block";
+                        }
+                  }
+
+            document.querySelector('body').addEventListener('keypress', function (e) {
+                  if (e.key === 'Enter') {
+                        search();
+                        console.log("done twas fun");
+                  }
+            });
+      </script>
+</body>
+</html>

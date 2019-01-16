@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" content="initial-scale = 1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="Main.js"></script>
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="res\favicon.png">
+    <title>Liam Jewer</title>
+  </head>
+  <body>
+    <div id="container">
+      <video loop muted autoplay id="FeatureVideo">
+        <source src="res\FeatureVideo.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div id="nav">
+      <ul id="linksL">
+        <li><a href="home.html">Home</a></li><!--
+        --><li><a href="Software.html">Software</a></li>
+      </ul>
+      <img src="res\Nav_Logo.svg" alt="Logo" id="nav_logo">
+      <ul id="linksR">
+        <li><a href="Photography.html">Photography</a></li><!--
+        --><li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+
+    <div id="scroll">
+      <h2>Scroll For More</h2>
+      <i class = "down" id="1"></i><br>
+      <i class = "down" id="2"></i><br>
+      <i class = "down" id="3"></i><br>
+    </div>
+
+    <div id="homeContent">
+      <div id="heading">
+        <img src="res\Liam.jpg" alt="me" id = "img_me">
+        <h1 id = "name">Liam Jewer</h1>
+        <h2 id = "desc">Software Development Enthusiast</h2>
+        <div id="left">
+          <a href="https://www.instagram.com/liams_photoz/?hl=en"><i class="fab fa-instagram fa-2x icon"></i></a>
+          <a href="mailto: Liam@jewer.ca"><i class="fas fa-at fa-2x icon"></i></a>
+        </div>
+        <div id="right">
+          <a href="https://www.facebook.com/profile.php?id=100011741945897"><i class="fab fa-facebook-square fa-2x icon"></i></a>
+          <a href="https://www.linkedin.com/in/liam-jewer-544b7915b/"><i class="fab fa-linkedin fa-2x icon"></i></a>
+        </div>
+      </div>
+    </div>
+    <div id = "footer">
+      <P>© 2018</P>
+      <div id="ico">
+        <a href="https://www.instagram.com/liams_photoz/?hl=en"><i class="fab fa-instagram icon"></i></a>
+        <a href="mailto: Liam@jewer.ca"><i class="fas fa-at icon"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100011741945897"><i class="fab fa-facebook-square icon"></i></a>
+        <a href="https://www.linkedin.com/in/liam-jewer-544b7915b/"><i class="fab fa-linkedin icon"></i></a>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    var h;
+    var w;
+    var l = document.getElementById("linksL");
+    var r = document.getElementById("linksR");
+    var nav = document.getElementById("nav");
+    var thistime = true;
+    var thattime = true;
+    var pic = document.getElementById("img_me");
+    var left = document.getElementById("left");
+    var right = document.getElementById("right");
+
+    $.setInterval(function() {
+        $('#1').fadeOut().fadeIn();
+    }, 3000);
+    $.setInterval(function() {
+        $('#2').fadeOut().fadeIn();
+    }, 100);
+    $.setInterval(function() {
+        $('#3').fadeOut().fadeIn();
+    }, 100);
+
+    $(document).scroll(function() {
+      h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+      w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+      if ($(document).scrollTop() >= h) {
+        if (thattime) {
+          nav.style.height = "100px";
+          l.style.lineHeight = "100px";
+          r.style.lineHeight = "100px";
+          thistime = true;
+          thattime = false;
+        }
+      }else {
+        if (thistime) {
+          nav.style.height = "20vh";
+          l.style.lineHeight = "20vh";
+          r.style.lineHeight = "20vh";
+          thistime = false;
+          thattime = true;
+        }
+      }
+      if ($(document).scrollTop() >= w*0.15 + h*0.3) {
+        pic.style.transform = "rotate(-360deg)";
+        pic.style.marginLeft = "0";
+      }else{
+        pic.style.transform = "rotate(360deg)";
+        pic.style.marginLeft = "100%";
+      }
+      if ($(document).scrollTop() >= w*0.15 + h*0.3 + 176.36) {
+        console.log("now");
+        left.style.marginRight = "0";
+        right.style.marginLeft = "0";
+      }else{
+        left.style.marginRight = "40%";
+        right.style.marginLeft = "40%";
+      }
+    });
+  </script>
+</html>

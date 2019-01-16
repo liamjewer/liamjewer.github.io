@@ -1,0 +1,230 @@
+#programming{
+      width: 100%;
+      margin: 150px 0 50px 0;
+      text-align: center;
+}
+
+.box{
+      width: 60%;
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      border: 5px solid #000000;
+      transition: background-color 0.5s ease;
+      margin: 25px 0 25px 0;
+      overflow: hidden;
+}
+
+.box:hover{
+      background-color: #000000;
+}
+
+.box > img{
+      width: 50%;
+      float: right;
+}
+
+.imageScroll{
+      height: 500px;
+      overflow: auto;
+      width: 50%;
+      float: right;
+}
+.imageScroll > img{
+      width: 100%;
+}
+
+.text{
+      width: 48%;
+      padding: 1%;
+      text-align: left;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+}
+
+input:focus, button:focus{
+      outline: none;
+}
+
+#holder{
+      background-color: #ffffff;
+      width: 60%;
+      display: inline-block;
+      border-radius: 20px;
+      margin: 50px 0 20px 0;
+      background: linear-gradient(to right, #dddddd 50%, #ffffff 50%);
+      background-size: 200% 100%;
+      background-position: right bottom;
+      transition: all 2s ease;
+}
+
+.Search{
+	width: 90%;
+	height: 40px;
+	border: 1px solid #ffffff00;
+	box-sizing: border-box;
+	margin: 0;
+	vertical-align: middle;
+	font-family: inherit;
+      font-size: 18px;
+      border-radius: 20px;
+      float: left;
+      padding-left: 1%;
+      background-color: #ffffff00;
+}
+
+#Searchbtn{
+      width: 40px;
+      height: 40px;
+      background-color: #ffffff00;
+      color: #00bb00;
+      border: none;
+      cursor: pointer;
+      margin: 0;
+      vertical-align: middle;
+      border-radius: 50%;
+      float: right;
+}
+
+#Searchbtn:hover{
+	color: #007700;
+	background-color: #e6e6e6;
+}
+
+#NoResultsFound{
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 70vh;
+}
+
+html, body {
+      height: 100%;
+}
+body {
+      display: grid;
+}
+.check {
+      cursor: pointer;
+      position: relative;
+      margin: auto;
+      width: 18px;
+      height: 18px;
+      -webkit-tap-highlight-color: transparent;
+      transform: translate3d(0, 0, 0);
+}
+.check:before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: -15px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(34,50,84,0.03);
+      opacity: 0;
+      transition: opacity 0.2s ease;
+}
+.check svg {
+      position: relative;
+      z-index: 1;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke: #c8ccd4;
+      stroke-width: 1.5;
+      transform: translate3d(0, 0, 0);
+      transition: all 0.2s ease;
+}
+.check svg path {
+      stroke-dasharray: 60;
+      stroke-dashoffset: 0;
+}
+.check svg polyline {
+      stroke-dasharray: 22;
+      stroke-dashoffset: 66;
+}
+.check:hover:before {
+      opacity: 1;
+}
+.check:hover svg {
+      stroke: #00bb00;
+}
+#cbx:checked + .check svg {
+      stroke: #00bb00;
+}
+#cbx:checked + .check svg path {
+      stroke-dashoffset: 60;
+      transition: all 0.3s linear;
+}
+#cbx:checked + .check svg polyline {
+      stroke-dashoffset: 42;
+      transition: all 0.2s linear;
+      transition-delay: 0.15s;
+}
+#cbx1:checked + .check svg {
+      stroke: #00bb00;
+}
+#cbx1:checked + .check svg path {
+      stroke-dashoffset: 60;
+      transition: all 0.3s linear;
+}
+#cbx1:checked + .check svg polyline {
+      stroke-dashoffset: 42;
+      transition: all 0.2s linear;
+      transition-delay: 0.15s;
+}
+#cbx2:checked + .check svg {
+      stroke: #00bb00;
+}
+#cbx2:checked + .check svg path {
+      stroke-dashoffset: 60;
+      transition: all 0.3s linear;
+}
+#cbx2:checked + .check svg polyline {
+      stroke-dashoffset: 42;
+      transition: all 0.2s linear;
+      transition-delay: 0.15s;
+}
+#cbx3:checked + .check svg {
+      stroke: #00bb00;
+}
+#cbx3:checked + .check svg path {
+      stroke-dashoffset: 60;
+      transition: all 0.3s linear;
+}
+#cbx3:checked + .check svg polyline {
+      stroke-dashoffset: 42;
+      transition: all 0.2s linear;
+      transition-delay: 0.15s;
+}
+#filter{
+      text-align: center;
+      display: none;
+      font-size: 20px;
+}
+
+#form{
+      text-align: center;
+      color: #ffffff;
+}
+
+#inputs{
+      width: 20%;
+      display: inline-block;
+      text-align: left;
+}
+
+button{
+      width: 29%;
+      background-color: #303030;
+      color: black;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+      margin: 10px 1%;
+}
+
+button:hover{
+      border: 3px solid #000000;
+}
