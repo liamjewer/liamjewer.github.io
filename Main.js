@@ -16,7 +16,7 @@ function glitch(){
   img.src = "res/glitch.gif";
   img.style.height = "100%";
   window.setTimeout(function(){
-    img.src = "res/nav_logo.svg";
+    img.src = "res/Nav_Logo.svg";
     img.style.height = "80%";
   }, 500);
 }
