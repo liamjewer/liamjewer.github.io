@@ -201,10 +201,19 @@
                               if (document.getElementById("NoResultsFound") != null && results.length != 0) {
                                     programming.removeChild(document.getElementById("NoResultsFound"));
                               }
+                              showall();
                               for (var d = 0; d < box.length; d++) {
                                     if (!results.includes(box[d].id)) {
                                           document.getElementById(box[d].id).style.display = "none";
                                     }
+                              }
+                              for (var i = 0; i < filters.length; i++) {
+                                    if(filters[i].checked){
+                                          nonechecked = false;
+                                    }
+                              }
+                              if (!nonechecked) {
+                                    filter();
                               }
                         }
                   }else{
@@ -214,7 +223,9 @@
                               }
                         }
                         if (!nonechecked) {
+                              showall();
                               filter();
+                              
                         }else{
                               inputElement.placeholder = "Please Enter Keywords To Search...";
                         }
@@ -227,6 +238,8 @@
                   }
                   if(noneshown && document.getElementById("NoResultsFound") == null){
                         programming.appendChild(p);
+                  }else if(document.getElementById("NoResultsFound") != null){
+                        programming.removeChild(document.getElementById("NoResultsFound"));
                   }
                   searchani();
             }
@@ -254,7 +267,6 @@
                               }
                         }
                         if(!nonechecked){
-                              showall();
                               for (var i = 0; i < filters.length; i++) {
                                     if(!filters[i].checked){
                                           for (let y = 0; y < document.getElementsByClassName(filters[i].value).length; y++) {
@@ -275,7 +287,6 @@
             document.querySelector('body').addEventListener('keypress', function (e) {
                   if (e.key === 'Enter') {
                         search();
-                        console.log("done twas fun");
                   }
             });
       </script>
