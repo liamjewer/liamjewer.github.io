@@ -23,3 +23,8 @@ function glitch(){
 window.onload = function() {
   glitch();
 }
+
+$(document).scroll(function() {
+  document.getElementById("gear").style.transform = "rotate(" + $(document).scrollTop()/5 + "deg)"
+  document.getElementById("gear2").style.transform = "rotate(" + $(document).scrollTop()/-3.3 + "deg)"
+});
