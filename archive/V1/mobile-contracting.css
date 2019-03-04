@@ -1,0 +1,88 @@
+/*phones*/
+/* Portrait */
+@media only screen
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (-webkit-max-device-pixel-ratio: 4)
+  and (orientation: portrait) {
+    #statements > h2{
+      font-size: 50px;
+    }
+
+    .left{
+      margin-left: 10%;
+    }
+    .right{
+      margin-right: 10%;
+    }
+
+    #main{
+      width: 95%;
+    }
+    #main > h1{
+      font-size: 70px;
+    }
+    #main > ul > li{
+      font-size: 32px;
+    }
+    #main > p {
+      font-size: 32px;
+    }
+    #main > a > img{
+      width: 100%;
+    }
+}
+
+/* Landscape */
+@media only screen
+  and (max-device-height: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (-webkit-max-device-pixel-ratio: 4)
+  and (orientation: landscape) {
+    #statements > h2{
+      font-size: 50px;
+    }
+
+    .left{
+      margin-left: 10%;
+    }
+    .right{
+      margin-right: 10%;
+    }
+
+    #main{
+      width: 95%;
+    }
+    #main > h1{
+      font-size: 70px;
+    }
+    #main > ul > li{
+      font-size: 32px;
+    }
+    #main > p {
+      font-size: 32px;
+    }
+    #main > a > img{
+      width: 50%;
+    }
+}
+/*tablets*/
+/* Portrait */
+@media only screen
+  and (min-device-width: 601px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (-webkit-max-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 601px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (-webkit-max-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}

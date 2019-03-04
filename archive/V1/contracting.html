@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<head>
+  <meta charset="utf-8"  content="initial-scale = 1.0">
+  <title>Liam Jewer - Contracting</title>
+  <link rel="icon" type="image/png" href="Res\favicons\favicon.png">
+  <link rel="stylesheet" type="text/css" href="general.css">
+  <link rel="stylesheet" type="text/css" href="contracting.css">
+  <link rel="stylesheet" type="text/css" href="mobile.css" id="mobile">
+  <link rel="stylesheet" type="text/css" href="mobile-contracting.css">
+</head>
+
+<body>
+  <div id="nav">
+    <ul id="nav_items">
+      <img src="Res\Logo\Logo.png" alt="Logo" id="nav_logo">
+      <li><a href="home">Home</a></li><!--
+  --><li><a href="about">About Me</a></li><!--
+  --><li><a href="contracting">Contracting</a></li><!--
+  --><div id="dropdown" tabindex="1"><li><a id="dropbtn">Projects</a></li>
+        <div id="dropdown-content">
+          <div id="as">
+            <a href="projects">Projects Hub</a>
+            <a href="photography">Photography</a>
+            <a href="websites">Websites</a>
+            <a href="other">Other Projects</a>
+          </div>
+        </div>
+      </div>
+    </ul>
+
+    <ul id="mobile_nav_items">
+      <img src="Res\Logo\Logo.png" alt="Logo" id="nav_logo">
+      <div id="dropdown-mobile" tabindex="0" onclick="drop();">
+        <img src="Res\symbols\dropdown.png" alt="menu" id="dropbtn-mobile">
+        <div id="dropdown-content-mobile">
+          <div id="as-mobile">
+            <a href="home">Home</a>
+            <a href="about">About Me</a>
+            <a href="contracting">Contracting</a>
+            <a href="projects">Projects Hub</a>
+            <a href="photography">Photography</a>
+            <a href="websites">Websites</a>
+            <a href="other">Other Projects</a>
+          </div>
+        </div>
+      </div>
+    </ul>
+  </div>
+
+  <div id="banners">
+    <img src="Res\banners\contracting.png" alt="contracting" class="banner">
+  </div>
+
+  <div id="statements">
+    <div class="left"><h2>I want a website!</h2></div>
+    <div class="right"><h2>I don't know how to code</h2></div>
+    <div class="left"><h2>I don't have time to learn to code</h2></div>
+    <div class="right"><h2>contracting is so expensive</h2></div>
+  </div>
+  <div id="main">
+    <h1>My websites are...</h1>
+    <ul>
+      <li>less expensive</li>
+      <li>good looking</li>
+      <li>modern</li>
+      <li>responsive</li>
+    </ul>
+    <p>If you are interested please contact me for a quote at
+    <a href="mailto:liam@jewer.ca?subject=Website Quote">liam@jewer.ca</a> <br>
+    <br>please note my services do not include hosting you will have to select a separate
+    hosting service and pay for it yourself. however, I <b>will</b> get all the necessary files
+    and settings set up for you. my services can include graphic design for an extra
+    cost, you can send me any banners, logos, or any other images you may want on
+    your website.</p>
+
+    <h1>HTML help</h1>
+    <p>please contact me if you need help with HTML, CSS, or Javascript. below are some
+    suggested resources, these are my go-to websites for web development.</p>
+
+    <a href="https://www.w3schools.com"><img src="Res\symbols\W3Schools.png" alt="W3Schools"></a>
+    <a href="https://stackoverflow.com/"><img src="Res\symbols\stackoverflow.png" alt="Stack Overflow"></a>
+  </div>
+
+  <div id="footer">
+    <p id="copywrite">© 2018 Liam Jewer</p>
+  </div>
+  <script type="text/javascript" src="style.js"></script>
+</body>
+</html>

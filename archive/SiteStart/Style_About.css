@@ -1,0 +1,19 @@
+.About{
+	margin-top: 50px;
+	width: 100%;
+	color: #000000;
+}
+.about_list{
+	width: 50%;
+	color: #000000;
+	text-align: left;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+.about_list > p{
+	margin: 0;
+}
+.symbol{
+	background-color: #ffffff;
+	width: 20%;
+}

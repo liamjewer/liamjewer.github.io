@@ -1,0 +1,60 @@
+/*phones*/
+/* Portrait */
+@media only screen
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (-webkit-max-device-pixel-ratio: 4)
+  and (orientation: portrait) {
+    #content > h1{
+      font-size: 70px;
+    }
+
+    #content > h3{
+      font-size: 45px;
+    }
+
+    .site{
+      width: 90%;
+      margin: 75px 0;
+    }
+}
+
+/* Landscape */
+@media only screen
+  and (max-device-height: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (-webkit-max-device-pixel-ratio: 4)
+  and (orientation: landscape) {
+    #content > h1{
+      font-size: 50px;
+    }
+
+    #content > h3{
+      font-size: 25px;
+    }
+
+    .site{
+      width: 30%;
+      margin: 20px;
+    }
+}
+/*tablets*/
+/* Portrait */
+@media only screen
+  and (min-device-width: 601px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (-webkit-max-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 601px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (-webkit-max-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}

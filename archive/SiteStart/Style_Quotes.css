@@ -1,0 +1,51 @@
+.Quote{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 90%;
+	color: #000000;
+	font-family: inherit;
+	font-size: 18px;
+	display: inline-block;
+	padding: 20px;
+	border: 2px;
+	border-style: solid;
+	border-color: black;
+}
+input[type=text], select, textarea, input[type=Email] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+		font-family: inherit;
+		font-size: 18px;
+}
+
+input[type=submit], .formbtn, .removebutton {
+    width: 90%;
+    background-color: #00cc00;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+		font-size: 18px;
+}
+
+input[type=submit]:hover, .formbtn:hover, .removebutton:hover {
+    background-color: #009900;
+		color: #e6e6e6;
+}
+
+label, .radio, h3{
+	float: left;
+	margin-left: 5%;
+}
+
+input[type=radio]{
+	float: left;
+}
+#results{
+	display: none;
+}
