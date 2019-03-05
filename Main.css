@@ -124,6 +124,22 @@ p{
   line-height: 100px;
 }
 
+#gear{
+  position: fixed;
+  z-index: 5;
+  bottom: 20px;
+  left: 20px;
+  width: 100px;
+}
+
+#gear2{
+  position: fixed;
+  z-index: 5;
+  bottom: 87px;
+  left: 87px;
+  width: 50px;
+}
+
 #footer > p{
   float: left;
   padding-left: 10%;
