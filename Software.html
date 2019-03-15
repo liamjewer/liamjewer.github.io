@@ -61,7 +61,7 @@
                   </form>
                   </div>
 
-            <div class="box java" id="fll">
+            <div class="box java" id="fll" tabindex="0">
                   <div class="text">
                         <h2 class="name">FLL Timer application</h2>
                         <p class="para">Every year my robotics team (FRC team 3683 – Team Dave) hosts a First Lego League competition. I made this app to be used with the OBS streaming software to control a timer with video overlay on a projector. This app features a menu system, 3 display modes (practice match, match, and break). These feature different times on the timer and displays what mode it is in. this is the second variation of the app.<p>
@@ -69,7 +69,7 @@
                    <img src="res\FLL1.png" id="imgFLL">
             </div>
 
-            <div class="box java" id="snake">
+            <div class="box java" id="snake" tabindex="1">
                   <div class="text">
                         <h2 class="name">Modified Snake Game</h2>
                         <p class="para">I followed a tutorial to create a snake game in my early java days. After finishing the tutorial I modified the game to add speed to your snake as you meet score benchmarks and added sounds to the game to learn how to use sound in java.</p>
@@ -77,7 +77,7 @@
                   <img src="res\Snake.png">
             </div>
 
-            <div class="box java" id="xo">
+            <div class="box java" id="xo" tabindex="2">
                   <div class="text">
                         <h2 class="name">Console X's and O's</h2>
                         <p class="para">This is a console app that I made as one of my first projects in java. I was challenged by my friend to create a X’s and O’s app in the console using scanners and printing. I was pretty proud to have finished this challenge within 2 hours, although now I could probably redo it in 30 minutes.</p>
@@ -85,7 +85,7 @@
                   <div class="imageScroll"><img src="res\XO.png"></div>
             </div>
 
-            <div class="box webpage" id="sitestart">
+            <div class="box webpage" id="sitestart" tabindex="3">
                   <div class="text">
                         <h2 class="name">Sitestart</h2>
                         <p class="para">SiteStart was a business idea that me and a few friends had. This business would create professional and personal websites for clients at a reasonable price point. The idea was to make responsive, stunning, and modern websites for anyone without the time, knowledge, or effort to build their own website. Unfortunately the business did not work out, but I still made a pretty nice website for it. You can visit SiteStart <a href=archive\SiteStart\Home>here
@@ -94,7 +94,7 @@
                   <img src="res\sitestart.svg">
             </div>
 
-            <div class="box webpage" id="lj">
+            <div class="box webpage" id="lj" tabindex="4">
                   <div class="text">
                         <h2 class="name">Portfolio V1</h2>
                         <p class="para">The first version of my portfolio site was a nice light themed website that has stellar mobile functionality you can still visit this site <a href=archive\V1\home>here</a>. I made this website to promote my hobbies and life and inspired the site you are on right now.</p>
@@ -270,6 +270,7 @@
             }
 
                   function filter(){
+                        showall();
                         for (var i = 0; i < filters.length; i++) {
                               if(filters[i].checked){
                                     nonechecked = false;
@@ -300,6 +301,7 @@
                         search();
                   }
             });
+            
       </script>
 </body>
 </html>
