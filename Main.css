@@ -162,10 +162,10 @@ p{
 }
  
 ::-webkit-scrollbar-thumb {
-  background: #007700;
+  background: #00bb00;
   border-radius: 1vw;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #003300;
+  background: #007700;
 }
