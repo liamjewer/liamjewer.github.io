@@ -93,26 +93,26 @@ h2{
     left: 0;
     overflow: hidden;
     z-index: -100;
-  }
-  
-  #FeatureVideo{
+}
+
+#FeatureVideo{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-  }
-  
-  @media (min-aspect-ratio: 16/9) {
+}
+
+@media (min-aspect-ratio: 16/9) {
     #FeatureVideo{
-      height: 300%;
-      top: -100%;
+        height: 300%;
+        top: -100%;
     }
-  }
-  
-  @media (max-aspect-ratio: 16/9) {
+}
+
+@media (max-aspect-ratio: 16/9) {
     #FeatureVideo{
-      width: 300%;
-      left: -100%;
+        width: 300%;
+        left: -100%;
     }
-  }
+}
