@@ -8,6 +8,41 @@ body{
   position: absolute;
 }
 
+#content{
+  text-align: center;
+  width: 100vw;
+  margin-top: 15vh;
+}
+
+#content > ul{
+  list-style-type: unset;
+  color: #ffffff;
+  text-align: left;
+  width: 60%;
+  display: inline-block;
+}
+
+#content > ul > li, #content > ul > dd{
+  padding-bottom: 10px;
+}
+
+table {
+  font-family: custom;
+  border-collapse: collapse;
+  color: #ffffff;
+  display: inline-block;
+}
+
+td, th {
+  border: 3px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #3b3b3b;
+}
+
 #nav{
   position: fixed;
 	background-color: #000000;
@@ -161,19 +196,30 @@ body{
 
 h1{
   font-family: customh;
+  color: #002366;
 }
 h2{
   font-family: customh;
+  color: #001846;
 }
 h3{
   font-family: customh;
+  color: #001846;
 }
 h4{
   font-family: customh;
+  color: #001846;
 }
 h5{
   font-family: customh;
+  color: #001846;
 }
 h6{
   font-family: customh;
+  color: #001846;
+}
+
+p{
+  font-family: custom;
+  color: #ffffff;
 }
