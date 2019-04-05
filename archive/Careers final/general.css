@@ -14,7 +14,17 @@ body{
   margin-top: 15vh;
 }
 
-#content > ul{
+.fifty{
+  width: 50%;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+
+.fifty > ul{
   list-style-type: unset;
   color: #ffffff;
   text-align: left;
@@ -22,7 +32,11 @@ body{
   display: inline-block;
 }
 
-#content > ul > li, #content > ul > dd{
+.A{
+  width: 30% !important;
+}
+
+.fifty > ul > li, #content > ul > dd{
   padding-bottom: 10px;
 }
 
