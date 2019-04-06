@@ -100,7 +100,7 @@ tr:nth-child(even) {
 
 #nav_items > li > a:hover{
 	color: #001846;
-	background: radial-gradient(#000000 60%, #002366);
+  background: linear-gradient(#002366, #000000, #002366);
 }
 
 #banners{
