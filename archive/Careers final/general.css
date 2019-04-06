@@ -104,12 +104,25 @@ tr:nth-child(even) {
 }
 
 #banners{
-  width: 100%;
+  width: 100vw;
   text-align: center;
 }
 #banners > h3{
   color: #002366;
 }
+
+#PlanA{
+  background-image: url("Res/banners/PlanA.jpg");
+}
+
+#PlanB{
+  background-image: url("Res/banners/PlanB.png");
+}
+
+#Bibliography{
+  background-image: url("Res/banners/Bibliography.jpg");
+}
+
 
 .banner{
   width: 100%;
@@ -134,7 +147,15 @@ tr:nth-child(even) {
   width: 100%;
 	position: relative;
 	display: block;
-	overflow: hidden;
+  overflow: hidden;
+  /* Full height */
+  height: 75vh; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .bannerbox:hover{
