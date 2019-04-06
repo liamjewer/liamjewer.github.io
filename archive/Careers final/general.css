@@ -95,12 +95,12 @@ tr:nth-child(even) {
 	padding: 18px;
 	color: black;
   font-size: 18px;
-  color: #002366;
+  color: #0059ff;
 }
 
 #nav_items > li > a:hover{
-	color: #001846;
-  background: linear-gradient(#002366, #000000, #002366);
+	color: #0059ff;
+  background: linear-gradient(#0059ff, #000000, #0059ff);
 }
 
 #banners{
@@ -231,27 +231,27 @@ tr:nth-child(even) {
 
 h1{
   font-family: customh;
-  color: #002366;
+  color: #0059ff;
 }
 h2{
   font-family: customh;
-  color: #001846;
+  color: #002366;
 }
 h3{
   font-family: customh;
-  color: #001846;
+  color: #002366;
 }
 h4{
   font-family: customh;
-  color: #001846;
+  color: #002366;
 }
 h5{
   font-family: customh;
-  color: #001846;
+  color: #002366;
 }
 h6{
   font-family: customh;
-  color: #001846;
+  color: #002366;
 }
 
 p{
