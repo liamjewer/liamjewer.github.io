@@ -6,9 +6,11 @@ body{
   overflow-x: hidden;
   margin: 0;
   position: absolute;
+  text-align: center;
 }
 
 #content{
+  display: inline-block;
   text-align: center;
   width: 100vw;
   margin-top: 15vh;
