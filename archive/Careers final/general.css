@@ -26,6 +26,10 @@ body{
   float: right;
 }
 
+.fas{
+  color: #ffffff;
+}
+
 .fifty > ul{
   list-style-type: unset;
   color: #ffffff;
