@@ -16,7 +16,7 @@
       overflow: hidden;
 }
 
-.box:focus{
+.box:focus-within{
       outline: none !important;
       animation-name: expand-box;
       animation-duration: 1s;
@@ -54,28 +54,28 @@
       }
 }
 
-.box:focus > .text{
+.box:focus-within > .text{
       width: 66%;
       text-align: left;
 }
 
-.box:focus > .imageScroll > img{
+.box:focus-within > .imageScroll > img{
       width: 25vw;
       height: auto;
 }
 
-.box:focus > img{
+.box:focus-within > img{
       height: 25vw;
       width: 25vw;
       transition-delay: 0s;
 }
 
-.box:focus > .imageScroll{
+.box:focus-within > .imageScroll{
       height: 25vw;
       width: 30vw;
 }
 
-.box:focus > .text > .para{
+.box:focus-within > .text > .para{
       animation-name: expand-text;
       animation-duration: 1s;
       animation-fill-mode: forwards;
