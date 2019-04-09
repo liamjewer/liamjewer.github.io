@@ -13,7 +13,7 @@ body{
   display: inline-block;
   text-align: center;
   width: 100vw;
-  margin-top: 15vh;
+  margin-top: 10vh;
 }
 
 .fifty{
@@ -24,6 +24,10 @@ body{
 }
 .right{
   float: right;
+}
+
+.fas{
+  color: #ffffff;
 }
 
 .fifty > ul{
@@ -106,6 +110,7 @@ tr:nth-child(even) {
 }
 
 #banners{
+  margin-top: 10vh;
   width: 100vw;
   text-align: center;
 }
