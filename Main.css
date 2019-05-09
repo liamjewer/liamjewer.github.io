@@ -163,3 +163,128 @@ p{
 ::-webkit-scrollbar-thumb:hover {
   background: #007700;
 }
+
+/*dropdown*/
+
+#dropNav{
+  transform: rotatey(90deg);
+  position: absolute;
+  z-index: 9;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000cc;
+  left: 0;
+  top: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+#dropItems{
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+}
+
+#dropItems > li > a{
+  text-decoration: none;
+  color: #00bb00;
+  font-size: 25pt;
+}
+
+#dropItems > li{
+  width: 100%;
+  padding: 5vh 0 5vh 0;
+}
+
+#dropItems > li:hover{
+  background: #000000;
+  color: #007700;
+}
+
+#desktopNav{
+  display: block;
+}
+
+#dropBtn{
+  height: 100px;
+  width: 100px;
+  margin: 0;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+#dropBtn > .line{
+  width: 100%;
+  height: 18%;
+  margin: 11.5% 0 11.5% 0;
+  background-color: #00bb00;
+  border-radius: 10vh;
+}
+
+#dropLogo{
+  width: 40%;
+  margin-top: -7.5vh;
+}
+
+@media only screen and (max-width: 960px){
+  #linksL, #linksR{
+    display: none;
+  }
+
+  #dropBtn{
+    display: block;
+  }
+}
+@media only screen and (max-width: 610px){ /*610 gang*/
+  #nav_logo{
+    right: 3vh;
+    left: auto;
+  }
+}
+
+/*mobile*/
+
+/*phones*/
+/* Portrait */
+@media only screen
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (-webkit-max-device-pixel-ratio: 4)
+  and (orientation: portrait) {
+    
+}
+
+/* Landscape */
+@media only screen
+  and (max-device-height: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (-webkit-max-device-pixel-ratio: 4)
+  and (orientation: landscape) {
+
+}
+
+/*tablets*/
+/* Portrait */
+@media only screen
+  and (min-device-width: 601px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (-webkit-max-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 601px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (-webkit-max-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}

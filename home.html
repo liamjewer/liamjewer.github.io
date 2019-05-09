@@ -17,15 +17,35 @@
       </video>
     </div>
     <div id="nav">
-      <ul id="linksL">
-        <li><a href="home.html">Home</a></li><!--
-        --><li><a href="Software.html">Software</a></li>
-      </ul>
-      <img src="res\Nav_Logo.svg" alt="Logo" id="nav_logo">
-      <ul id="linksR">
-        <li><a href="Photography.html">Photography</a></li><!--
-        --><li><a href="about.html">About</a></li>
-      </ul>
+      <!--desktop-->
+      <div id="desktopNav">
+        <ul id="linksL">
+          <li><a href="home.html">Home</a></li><!--
+          --><li><a href="Software.html">Software</a></li>
+        </ul>
+        <img src="res\Nav_Logo.svg" alt="Logo" id="nav_logo">
+        <ul id="linksR">
+          <li><a href="Photography.html">Photography</a></li><!--
+          --><li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <!--dropdown-->
+      <!--button in nav-->
+      <div id="dropBtn" onclick="drop();">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <!--dropdown-->
+      <div id="dropNav">
+        <img src="res/favicon.png" alt="logo" id="dropLogo">
+        <ul id="dropItems">
+          <li><a href="home">Home</a></li>
+          <li><a href="Software">Software</a></li>
+          <li><a href="Photography">Photography</a></li>
+          <li><a href="about">About</a></li>
+        </ul>
+      </div>
     </div>
 
     <div id="scroll">

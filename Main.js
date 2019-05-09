@@ -28,3 +28,15 @@ $(document).scroll(function() {
   document.getElementById("gear").style.transform = "rotate(" + $(document).scrollTop()/5 + "deg)"
   document.getElementById("gear2").style.transform = "rotate(" + $(document).scrollTop()/-3.3 + "deg)"
 });
+var dropped = false;
+function drop(){
+  if(!dropped){
+    document.getElementById("dropNav").style.transform = "rotatey(0deg)";
+    $("body").css("overflow", "hidden");
+    dropped = true;
+  }else{
+    document.getElementById("dropNav").style.transform = "rotatey(90deg)";
+    $("body").css("overflow", "auto");
+    dropped = false;
+  }
+}
