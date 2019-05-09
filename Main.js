@@ -37,7 +37,8 @@ function drop(){
     dropped = true;
   }else{
     document.getElementById("dropNav").style.transform = "rotatey(90deg)";
-    $("body").css("overflowy", "auto");
+    $("body").css("overflow-y", "auto");
+    $("body").css("overflow-x", "hidden");
     dropped = false;
   }
 }
