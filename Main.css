@@ -191,6 +191,8 @@ p{
   text-decoration: none;
   color: #00bb00;
   font-size: 25pt;
+  height: 100%;
+  width: 100%;
 }
 
 #dropItems > li{
