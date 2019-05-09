@@ -28,6 +28,7 @@ $(document).scroll(function() {
   document.getElementById("gear").style.transform = "rotate(" + $(document).scrollTop()/5 + "deg)"
   document.getElementById("gear2").style.transform = "rotate(" + $(document).scrollTop()/-3.3 + "deg)"
 });
+//dropdown function
 var dropped = false;
 function drop(){
   if(!dropped){
