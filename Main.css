@@ -229,8 +229,7 @@ p{
 }
 
 #dropLogo{
-  width: 40%;
-  margin-top: -7.5vh;
+  height: 35vh;
 }
 
 @media only screen and (max-width: 960px){
@@ -250,7 +249,6 @@ p{
 }
 
 /*mobile*/
-
 /*phones*/
 /* Portrait */
 @media only screen
