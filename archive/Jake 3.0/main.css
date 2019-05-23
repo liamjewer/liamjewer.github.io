@@ -1,0 +1,70 @@
+:root {
+      --primary-color: #ffffff;
+      --secondary-color: #000000;
+      --accent-color: #e34234;
+      --hover: #b43529;
+}
+@font-face { font-family: custom; src: url('res/fonts/Century Gothic.ttf'); }
+
+body{
+      margin: 0;
+      font-family: custom;
+      text-align: center;
+      overflow-x: hidden;
+}
+
+#nav{
+      width: 100vw;
+      text-align: center;
+      margin-top: 50px;
+}
+
+#nav > a{
+      text-decoration: none;
+      font-size: 25pt;
+      color: var(--secondary-color);
+      margin: 0 5%;
+}
+
+#nav > a:hover{
+      color: var(--accent-color);
+}
+
+#footer{
+      background-color: var(--secondary-color);
+      color: var(--accent-color);
+}
+
+#footer > p{
+      padding-top: 20px;
+}
+
+#ico{
+      padding-bottom: 20px;
+}
+
+#ico > a{
+      color: var(--accent-color);
+      margin: 0 5px;
+}
+
+#ico > a:hover{
+      color: var(--hover);
+}
+
+::-webkit-scrollbar {
+      width: 10px;
+}
+
+::-webkit-scrollbar-track {
+      background: #ffffff; 
+}
+
+::-webkit-scrollbar-thumb {
+      background: #dadada;
+      border-radius: 1vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+      background: #c1c1c1;
+}

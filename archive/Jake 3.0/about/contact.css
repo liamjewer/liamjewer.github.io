@@ -1,0 +1,55 @@
+h1{
+      color: var(--accent-color);
+      font-size: 70pt;
+      font-weight: bold;
+      filter: drop-shadow(4px 4px 3px #595959);
+}
+
+#footer{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+}
+
+#Jake{
+      position: absolute;
+      height: 50vh;
+      left: 5vw;
+      bottom: 168px;
+}
+
+#icons{
+      margin-top: 10vh;
+}
+
+#icons > a{
+      display: inline-block;
+      color: #363636;
+      margin: 0 20px;
+}
+
+.icon{
+      transition: margin 0.5s ease;
+}
+
+.icon:hover{
+      color: var(--hover);
+      margin: 0 40px;
+}
+
+#text{
+      width: 67.5%;
+      float: right;
+      text-align: left;
+}
+
+#text > h2{
+      color: var(--accent-color);
+      font-size: 30pt;
+      margin: 0;
+}
+
+#text > p{
+      width: 80%;
+      font-size: 18pt;
+}
