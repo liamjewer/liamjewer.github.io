@@ -1,4 +1,5 @@
 var lines = [];
+showAll();
 $(document).ready(function() {
       $.ajax({
             type: "GET",
@@ -35,6 +36,7 @@ function processData(allText) {
 
             var overlay = document.createElement("div");
             overlay.className = "overlay";
+            overlay.setAttribute("onclick", "pop("+i+");");
             
             var icon = document.createElement("i");
             icon.className = "fas fa-play fa-4x icon";
@@ -66,7 +68,7 @@ function processData(allText) {
 }
 
 function pop (index){
-      document.getElementById("popup").style.display = "block";
+      document.getElementById("popup").style.display = "table";
       document.getElementById("popSource").src = lines[index][4];
       document.getElementById("popVid").load();
       document.getElementById("popTitle").innerHTML = lines[index][0];
@@ -81,9 +83,17 @@ function hide(){
       document.body.style.overflowY = 'auto';
 }
 
-function filter(target){
+function filter(target, obj){
       var all = document.getElementsByClassName("vidbox");
       var targets = document.getElementsByClassName(target);
+      var filters = document.getElementsByClassName("filter");
+      document.getElementById("dropBtn").innerHTML = obj.innerHTML;
+
+      for(i = 0; i<filters.length; i++){
+            filters[i].style.color = "#595959";
+      }
+
+      obj.style.color = "var(--accent-color)";
 
       for(i = 0; i < all.length; i++){
             all[i].style.display = "none";
@@ -96,6 +106,15 @@ function filter(target){
 
 function showAll(){
       var all = document.getElementsByClassName("vidbox");
+      var filters = document.getElementsByClassName("filter");
+
+      document.getElementById("dropBtn").innerHTML = "All";
+
+      for(i = 0; i<filters.length; i++){
+            filters[i].style.color = "#595959";
+      }
+
+      filters[0].style.color = "var(--accent-color)";
 
       for(i = 0; i < all.length; i++){
             all[i].style.display = "block";
@@ -111,7 +130,7 @@ window.onkeyup = function(e) {
 }
 
 document.documentElement.addEventListener("click", function(e) {
-      if (e.target.id === "popup") {
+      if (e.target.id === "popup" || e.target.tagName === "CENTER") {
             hide();
       }
 });

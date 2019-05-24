@@ -18,6 +18,7 @@
             <a href="contact">Contact</a>
       </div>
       <div id="header">
+            <img src="res\home\Jake.png" alt="Jake" id="MobiImg">
             <div id="left">
                   <h1>Jake Durrer</h1>
                   <h2>Filmmaker Enthusiast</h2>
@@ -29,24 +30,31 @@
             <img src="res\home\Jake.png" alt="Jake" id="headerImg">
       </div>
       <br>
-      <div id="filters">
-            <a onclick="showAll();">All</a>
-            <a onclick="filter('team-dave');">Team Dave</a>
-            <a onclick="filter('personal');">Personal</a>
-            <a onclick="filter('community');">Community</a>
-            <a onclick="filter('vfx');">VFX</a>
+      <div id="dropBtn" tabindex="1">
+            All
+      </div>
+      <div id="filters" tabindex="1">
+            <a onclick="showAll();" class="filter">All</a>
+            <a onclick="filter('team-dave', this);" class="filter">Team Dave</a>
+            <a onclick="filter('personal', this);" class="filter">Personal</a>
+            <a onclick="filter('community', this);" class="filter">Community</a>
+            <a onclick="filter('vfx', this);" class="filter">VFX</a>
       </div>
       <div id="videos">
             <!--content will be added here by js-->
       </div>
       <div id="popup">
-            <video controls autoplay id="popVid">
-                  <source src="" type="video/mp4" id="popSource">
-            </video>
-            <div id="popContainer">
-                  <h1 id="popTitle"></h1>
-                  <h2 id="popDate"></h2>
-                  <p id="popDesc"></p>
+            <div id="popContent">
+                  <center>
+                        <video controls autoplay id="popVid">
+                              <source src="" type="video/mp4" id="popSource">
+                        </video>
+                  </center>
+                  <div id="popContainer">
+                        <h1 id="popTitle"></h1>
+                        <h2 id="popDate"></h2>
+                        <p id="popDesc"></p>
+                  </div>
             </div>
       </div>
       <div id = "footer">
