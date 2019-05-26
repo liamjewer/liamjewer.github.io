@@ -103,6 +103,7 @@ function filter(target, obj){
             targets[i].style.display = "block";
       }
       document.getElementById("filters").style.height = 0;
+      document.getElementById("filters").style.border = "none";
 }
 
 function showAll(){
