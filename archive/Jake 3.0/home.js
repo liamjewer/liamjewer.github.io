@@ -130,7 +130,6 @@ window.onkeyup = function(e) {
 }
 
 document.documentElement.addEventListener("click", function(e) {
-      console.log(e.target.id);
       if (e.target.id === "popContent" || e.target.tagName === "CENTER") {
             hide();
       }
