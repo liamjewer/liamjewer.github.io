@@ -23,7 +23,7 @@ function processData(allText) {
                   lines.push(tarr);
             }
       }
-      for(var i = 0; i < lines.length; i++){
+      for(var i = lines.length - 1; i > 0; i--){
             var vidBox = document.createElement("div");
             vidBox.className = "vidbox " + lines[i][3];
 
@@ -102,8 +102,7 @@ function filter(target, obj){
       for(i = 0; i < targets.length; i++){
             targets[i].style.display = "block";
       }
-      document.getElementById("filters").style.height = 0;
-      document.getElementById("filters").style.border = "none";
+      dropup();
 }
 
 function showAll(){
@@ -121,6 +120,23 @@ function showAll(){
       for(i = 0; i < all.length; i++){
             all[i].style.display = "block";
       }
+}
+
+function dropdown(){
+      var filters = document.getElementById("filters");
+      console.log(filters.style.height != 0 || filters.style.height != 0 + "px");
+      if(filters.style.height != 0 && filters.style.height != 0 + "px"){
+            dropup();
+      }else{
+            filters.style.height = "125pt";
+            filters.style.border = "2px solid var(--accent-color)";
+            filters.style.borderTop = 0;
+      }
+}
+
+function dropup(){
+      filters.style.height = 0;
+      filters.style.border = "none";
 }
 
 window.onkeyup = function(e) {
