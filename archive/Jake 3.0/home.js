@@ -130,7 +130,7 @@ window.onkeyup = function(e) {
 }
 
 document.documentElement.addEventListener("click", function(e) {
-      if (e.target.id === "popup" || e.target.tagName === "CENTER") {
+      if (e.target.id === "popContent" || e.target.tagName === "CENTER") {
             hide();
       }
 });
