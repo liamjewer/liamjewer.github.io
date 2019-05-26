@@ -102,6 +102,7 @@ function filter(target, obj){
       for(i = 0; i < targets.length; i++){
             targets[i].style.display = "block";
       }
+      document.getElementById("filters").style.height = 0;
 }
 
 function showAll(){
