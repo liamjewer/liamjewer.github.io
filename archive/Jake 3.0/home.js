@@ -120,11 +120,11 @@ function showAll(){
       for(i = 0; i < all.length; i++){
             all[i].style.display = "block";
       }
+      dropup();
 }
 
 function dropdown(){
       var filters = document.getElementById("filters");
-      console.log(filters.style.height != 0 || filters.style.height != 0 + "px");
       if(filters.style.height != 0 && filters.style.height != 0 + "px"){
             dropup();
       }else{
@@ -148,7 +148,11 @@ window.onkeyup = function(e) {
 }
 
 document.documentElement.addEventListener("click", function(e) {
+
       if (e.target.id === "popContent" || e.target.tagName === "CENTER") {
             hide();
+      }
+      if (e.target.id != "dropBtn") {
+            dropup();
       }
 });

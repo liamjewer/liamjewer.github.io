@@ -192,6 +192,13 @@
       padding-left: 15px;
 }
 
+#x{
+      position: absolute;
+      left: 3vw;
+      top: 3vw;
+      color: var(--primary-color);
+}
+
 /*mobile*/
 /*phones*/
 /* Portrait */
