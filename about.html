@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jewer Designs</title>
+    <link rel="icon" type="image/png" href="res/favicon.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="about.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="hamBtn" onclick="clicked();" id="desktopBtn">
+        <div class="nav-icon">
+            <div></div>
+        </div>
+    </div>
+    <div id="nav-container">
+        <div id="nav">
+            <div class="circle" onclick="location.href='websites';"><i class="fas fa-id-card"></i>
+                <p>Websites</p>
+            </div>
+            <div class="circle" onclick="location.href='contact';"><i class="far fa-address-book"></i>
+                <p>Contact</p>
+            </div>
+            <div class="circle" onclick="location.href='about';"><i class="fas fa-user"></i>
+                <p>About</p>
+            </div>
+        </div>
+        <div id="home">
+            <i class="fas fa-home" onclick="location.href='home';"></i>
+        </div>
+    </div>
+    <div class="hamBtn" onclick="clickedMobile();" id="mobiBtn">
+        <div class="nav-icon">
+            <div></div>
+        </div>
+    </div>
+    <div id="mobinav">
+        <a class="section" href="websites">
+            Websites
+        </a>
+        <a class="section" href="contact">
+            Contact
+        </a>
+        <a class="section" href="about">
+            About
+        </a>
+        <a class="section" href="home">
+            Home
+        </a>
+    </div>
+
+    <div id="content">
+        <img src="res\About\liam.png" alt="Liam Jewer" id="Liam">
+
+        <div id="paragraph">
+            <h1>About Me</h1>
+            I’m Liam Jewer, Founder and Primary Creative Consultant at Jewer Designs. I am a self-taught software development enthusiast from Waterloo Ontario. I make stunning, responsive, interactive websites using my knowledge in HTML, CSS, JavaScript, and PHP
+            -- check out my previous works on my <a href="websites">websites page</a>. My software development skills extend beyond websites... I also use Java and occasionally Python and Visual Basic. I am an active member of the software
+            sub-team on FRC (First Robotics Competition) Team 3683 (Team DAVE), where I use Java to program a robot to complete a different challenge annually. I will be pursuing a career in Systems Design Engineering and hope to study at The University
+            of Waterloo. A career in Systems Design Engineering will help fulfil my love for software development and mechanical design. I will continue to make websites because it is a passion of mine and It will always remind me of where I started programming.
+            Check out my site, and <a href="contact">contact me</a> if you have any questions.
+        </div>
+    </div>
+
+    <div id="footer">
+        <P>
+            Copyright ©
+            <script type="text/javascript">
+                var d = new Date()
+                document.write(d.getFullYear())
+            </script>
+            Liam Jewer
+        </P>
+        <div id="ico">
+            <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+            <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+            <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script>
+        var pic = document.getElementById("Liam");
+        $(document).mousemove(function(event) {
+            var Xc = $('#Liam').offset().left + (pic.clientWidth / 2);
+            var Yc = $('#Liam').offset().top + (pic.clientHeight / 2);
+
+            var xOff = event.pageX - Xc;
+            var yOff = event.pageY - Yc;
+
+            pic.style.setProperty("filter", "drop-shadow(" + (xOff / -50) + "px " + (yOff / -50) + "px 4px #ff00007a) drop-shadow(" + (xOff / -30) + "px " + (yOff / -30) + "px 4px #00ff007a) drop-shadow(" + (xOff / -20) + "px " + (yOff / -20) + "px 4px #0000ff7a)");
+            pic.style.setProperty("transform", "translate(" + (xOff / 50) + "px, " + (yOff / 50) + "px)");
+        });
+    </script>
+</body>
+
+</html>

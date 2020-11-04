@@ -1,0 +1,269 @@
+#content {
+    min-height: 100vh;
+    background-color: rgb(32, 32, 32);
+    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+    background-size: 14px 14px, 14px 14px, 14px 7px;
+    background-position: 0px 0px, 7px 7px, 0px 0px;
+    overflow: hidden;
+}
+
+form {
+    background-color: #000000;
+    box-shadow: -20px 20px 75px 20px #000000;
+    width: 60vw;
+    color: #ffffff;
+    padding: 50px;
+    border-radius: 25px;
+    margin: 50px auto;
+}
+
+textarea {
+    font-family: customP;
+    font-size: 18pt;
+    padding: 5px;
+    width: 85%;
+    resize: none;
+    height: 200px;
+}
+
+textarea:focus {
+    border: 1px solid #1e1e1e;
+}
+
+input,
+select {
+    margin: 25px 0;
+    width: 80%;
+    font-family: customP;
+    font-size: 18pt;
+}
+
+input[type=text],
+input[type=email],
+select {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0, 0, 0, .14);
+    font-family: inherit;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+select:focus {
+    border: 1px solid #555;
+}
+
+input[type=submit] {
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 16px 32px;
+    cursor: pointer;
+    width: 87%;
+    margin-top: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: #151515;
+}
+
+label {
+    color: #ffffff;
+    font-size: 18pt;
+}
+
+#envelope {
+    width: 60vw;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 9;
+    top: 50px;
+    transform: translateX(-100%);
+    color: #000000;
+    border: 10px solid black;
+}
+
+.fly {
+    animation: fly 1s ease;
+}
+
+#checkmark-svg {
+    filter: drop-shadow(0 0 15px #005500);
+}
+
+#x-svg {
+    filter: drop-shadow(0 0 15px #550000);
+}
+
+@keyframes fly {
+    0% {
+        transform: translateX(-100%);
+    }
+    40% {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    60% {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    100% {
+        left: 0;
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes toMailbox {
+    0% {
+        transform: translatex(-100%);
+    }
+    100% {
+        left: 0;
+        transform: translatex(calc(100vw - 100% - 40px));
+    }
+}
+
+@keyframes toHalf {
+    0% {
+        transform: translatex(-100%);
+    }
+    100% {
+        left: 0;
+        transform: translatex(calc(50vw - 50%));
+    }
+}
+
+@keyframes checkmark {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes x {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.mailbox {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    height: 40vh;
+}
+
+#mailbox-mask {
+    z-index: 10;
+}
+
+#checkmark {
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: checkmark 1.5s ease forwards;
+}
+
+#x1 {
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: x 1.5s ease forwards;
+}
+
+#x2 {
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: x 1.5s ease forwards;
+}
+
+#checkmark-svg {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#x-svg {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/*mobile*/
+
+
+/*phones*/
+
+
+/* Portrait */
+
+@media only screen and (max-device-width: 425px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 4) and (orientation: portrait) {
+    #contactForm {
+        width: 100%;
+        padding: 25px 0;
+        border-radius: 0;
+    }
+    #envelope {
+        width: 100vw;
+    }
+    input,
+    select {
+        width: 60%;
+    }
+    #contactForm>h1 {
+        font-size: 18pt;
+    }
+    #checkmark-svg,
+    #x-svg {
+        transform: scale(0.5) translateX(-100%)!important;
+        top: 1vh;
+    }
+    .message {
+        font-size: 16pt;
+    }
+    @keyframes toHalf {
+        0% {
+            transform: translatex(-100%);
+        }
+        100% {
+            left: 0;
+            transform: translatex(-50%);
+        }
+    }
+}
+
+
+/* Landscape */
+
+@media only screen and (max-device-height: 425px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 4) and (orientation: landscape) {
+    #contactForm {
+        width: 100%;
+        padding: 25px 0;
+        border-radius: 0;
+        text-align: center;
+    }
+    #contactForm>h1 {
+        width: 90%;
+        font-size: 18pt;
+        display: inline-block;
+    }
+    .message {
+        font-size: 12pt!important;
+    }
+}
+
+
+/*tablets*/
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 426px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) and (-webkit-max-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 426px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape) {}

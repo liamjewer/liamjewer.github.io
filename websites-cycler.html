@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jewer Designs</title>
+    <link rel="icon" type="image/png" href="res/favicon.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="websites.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="hamBtn" onclick="clicked();" id="desktopBtn">
+        <div class="nav-icon">
+            <div></div>
+        </div>
+    </div>
+    <div id="nav-container">
+        <div id="nav">
+            <div class="circle" onclick="location.href='websites';"><i class="fas fa-id-card"></i>
+                <p>Websites</p>
+            </div>
+            <div class="circle" onclick="location.href='contact';"><i class="far fa-address-book"></i>
+                <p>Contact</p>
+            </div>
+            <div class="circle" onclick="location.href='about';"><i class="fas fa-user"></i>
+                <p>About</p>
+            </div>
+        </div>
+        <div id="home">
+            <i class="fas fa-home" onclick="location.href='home';"></i>
+        </div>
+    </div>
+    <div class="hamBtn" onclick="clickedMobile();" id="mobiBtn">
+        <div class="nav-icon">
+            <div></div>
+        </div>
+    </div>
+    <div id="mobinav">
+        <a class="section" href="websites">
+            Websites
+        </a>
+        <a class="section" href="contact">
+            Contact
+        </a>
+        <a class="section" href="about">
+            About
+        </a>
+        <a class="section" href="home">
+            Home
+        </a>
+    </div>
+
+    <div id="container">
+        <div id="top">
+            <div id="previous" class="btn" onclick="previous();"><i class="fas fa-arrow-circle-left fa-4x"></i></div>
+            <img id="one">
+            <img id="two">
+            <div id="next" class="btn" onclick="next();"><i class="fas fa-arrow-circle-right fa-4x"></i></div>
+        </div>
+        <div id="bottom">
+            <div id="title"></div>
+            <div id="description"></div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <P>
+            Copyright ©
+            <script type="text/javascript">
+                var d = new Date()
+                document.write(d.getFullYear())
+            </script>
+            Liam Jewer
+        </P>
+        <div id="ico">
+            <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+            <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+            <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                type: "GET",
+                url: "res/websites.csv",
+                dataType: "text",
+                success: function(data) {
+                    processDataCycler(data);
+                }
+            });
+        });
+    </script>
+    <script src="websites.js"></script>
+</body>
+
+</html>

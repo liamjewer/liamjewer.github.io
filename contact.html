@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jewer Designs</title>
+    <link rel="icon" type="image/png" href="res/favicon.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="hamBtn" onclick="clicked();" id="desktopBtn">
+        <div class="nav-icon">
+            <div></div>
+        </div>
+    </div>
+    <div id="nav-container">
+        <div id="nav">
+            <div class="circle" onclick="location.href='websites';"><i class="fas fa-id-card"></i>
+                <p>Websites</p>
+            </div>
+            <div class="circle" onclick="location.href='contact';"><i class="far fa-address-book"></i>
+                <p>Contact</p>
+            </div>
+            <div class="circle" onclick="location.href='about';"><i class="fas fa-user"></i>
+                <p>About</p>
+            </div>
+        </div>
+        <div id="home">
+            <i class="fas fa-home" onclick="location.href='home';"></i>
+        </div>
+    </div>
+    <div class="hamBtn" onclick="clickedMobile();" id="mobiBtn">
+        <div class="nav-icon">
+            <div></div>
+        </div>
+    </div>
+    <div id="mobinav">
+        <a class="section" href="websites">
+            Websites
+        </a>
+        <a class="section" href="contact">
+            Contact
+        </a>
+        <a class="section" href="about">
+            About
+        </a>
+        <a class="section" href="home">
+            Home
+        </a>
+    </div>
+
+    <div id="content">
+        <form method="post" action="contactengine.php" id="contactForm">
+            <h1>Need a Quote? Have a Question? Contact me using this form!</h1>
+            <label for="Name">Name:</label>
+            <input type="text" name="Name" id="Name" required/>
+            <br>
+            <label for="Email">Email:</label>
+            <input type="email" name="Email" id="Email" required/>
+            <br>
+            <label for="Name">Type:</label>
+            <select name="type" id="type">
+                <option value="--" selected disabled>--</option>
+                <option value="Quote">Quote</option>
+                <option value="Inquiry">Inquiry</option>
+                <option value="General Contact">General Contact</option>
+              </select>
+            <br>
+            <label for="Message">Message:</label><br/>
+            <textarea name="Message" id="Message" required></textarea>
+            <br>
+            <input type="submit" value="Send" class="submit-button" />
+        </form>
+        <div id="envelope">
+            <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon points="0,100 50,30 100,100 " style="fill:white;stroke:black;stroke-width:1 " />
+                <polygon points="0,0 50,50 100,0 " style="fill:white;stroke:black;stroke-width:1 " />
+            </svg>
+        </div>
+    </div>
+
+    <div id="footer ">
+        <P>
+            Copyright ©
+            <script type="text/javascript ">
+                var d = new Date()
+                document.write(d.getFullYear())
+            </script>
+            Liam Jewer
+        </P>
+        <div id="ico ">
+            <a href=" "><i class="fab fa-instagram fa-2x "></i></a>
+            <a href=" "><i class="fab fa-twitter fa-2x "></i></a>
+            <a href=" "><i class="fab fa-facebook fa-2x "></i></a>
+        </div>
+    </div>
+    <script src="main.js "></script>
+    <script>
+        //set height of envelope body to contact form height
+        var height = $("#contactForm ").outerHeight();
+        $("#envelope ").height(height);
+        $(window).on('resize', function(e) {
+            height = $("#contactForm ").outerHeight();
+            $("#envelope ").height(height);
+        });
+
+        $("#contactForm").submit(function(e) {
+            e.preventDefault(); //prevent submit
+
+            envelope.className = "fly"; //animate envelope
+            setTimeout(() => { //halfwayish through animation
+                $("#contactForm").hide();
+            }, 400);
+            setTimeout(() => { //after animation
+                //this.submit();
+                window.location.replace("sent.html");
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>

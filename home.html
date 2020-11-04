@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jewer Designs</title>
+    <link rel="icon" type="image/png" href="res/favicon.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <video class="visible-desktop" id="back-vid" autoplay loop muted>
+            <source type="video/mp4" src="res/home/MissionToMars.mp4">
+            </source>
+      </video>
+    <div id="header">
+        <h1>Jewer Designs</h1>
+        <div class="line"></div>
+        <h3>Web Development Services</h3>
+    </div>
+    <div id="nav">
+        <div class="circle" onclick="location.href='websites';"><i class="fas fa-id-card"></i>
+            <p>Websites</p>
+        </div>
+        <div class="circle" onclick="location.href='contact';"><i class="far fa-address-book"></i>
+            <p>Contact</p>
+        </div>
+        <div class="circle" onclick="location.href='about';"><i class="fas fa-user"></i>
+            <p>About</p>
+        </div>
+    </div>
+    <div class="hamBtn" onclick="clickedMobile();">
+        <div class="nav-icon">
+            <div></div>
+        </div>
+    </div>
+    <div id="mobinav">
+        <a class="section" href="websites">
+            Websites
+        </a>
+        <a class="section" href="contact">
+            Contact
+        </a>
+        <a class="section" href="about">
+            About
+        </a>
+        <a class="section" href="home">
+            Home
+        </a>
+    </div>
+    <div id="content">
+        <div id="message">
+            <h1 id="pretext">Websites for</h1>
+            </h1>
+            <h1 id="animatedText"></h1>
+            <div id="cursor"></div>
+        </div>
+    </div>
+    <div id="footer">
+        <P>
+            Copyright ©
+            <script type="text/javascript">
+                var d = new Date()
+                document.write(d.getFullYear())
+            </script>
+            Liam Jewer
+        </P>
+        <div id="ico">
+            <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+            <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+            <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(window).on('load scroll', function() {
+                var scrollval = $(this).scrollTop();
+                if (scrollval >= Math.max(document.documentElement.clientHeight, window.innerHeight || 0)) {
+                    $('#back-vid').get(0).pause();
+                } else {
+                    $('#back-vid').get(0).play();
+                }
+                $('#header').css({
+                    'transform': 'translate3d(0, ' + -(scrollval * 0.3) + 'px, 0)',
+                    'opacity': 1 - scrollval / 2000
+                });
+                $('#nav').css({
+                    'transform': 'translate3d(0, ' + -(scrollval * 0.5) + 'px, 0)',
+                    'opacity': 1 - scrollval / 2000
+                });
+                $('#back-vid').css({
+                    'transform': 'translate3d(0, ' + -(scrollval * 0.5) + 'px, 0)'
+                });
+            });
+        });
+
+        var str = ["Makers", "Photographers", "Businesses", "Bloggers", "Developers", "Podcasters"];
+        var colours = ["#ff5555", "#55ff55", "#5555ff", "#ff7a55", "#ff557a", "#7aff55", "#55ff7a", "#7a55ff", "#557aff"];
+        var partStr = "";
+        var currentString = str[0].split('');
+        var i = 0;
+        var n = 0;
+        var elem = document.getElementById("animatedText");
+        var interval = Math.random() * (200 - 100) + 100;
+        var interval = 30;
+        var count = 0;
+        var x = 0;
+
+        setInterval(function() {
+            $('#cursor').fadeOut().fadeIn();
+        }, 1200);
+
+        setInterval(function() {
+            if (count % interval == 0) {
+                if (i < currentString.length) {
+                    interval = 40;
+                    partStr += currentString[i];
+                    i++;
+                } else if (i < currentString.length + 10) {
+                    i++;
+                } else if (i < currentString.length * 2 + 10) {
+                    interval = 5;
+                    partStr = partStr.substring(0, partStr.length - 1);
+                    i++;
+                } else {
+                    i = 0;
+                    if (n < str.length - 1)
+                        n++;
+                    else
+                        n = 0;
+                    elem.style.color = colours[x];
+                    if (x < colours.length - 1)
+                        x++;
+                    else
+                        x = 0;
+                }
+                elem.innerHTML = partStr;
+
+                currentString = str[n].split('');
+            }
+            count++;
+        }, 1);
+
+        function redirect(url, obj) {
+            var big = obj.cloneNode(true);
+            $(big).css({
+                "visibility": "hidden"
+            });
+            var pos = $(obj).position();
+            $(obj).before(big);
+            var scrollTop = $(window).scrollTop(),
+                elementOffset = $(obj).offset().top,
+                distance = (elementOffset - scrollTop);
+            $(obj).css({
+                "position": "fixed",
+                "left": pos.left + "px",
+                "top": distance + "px"
+            });
+            $(obj).addClass("full");
+
+            $(obj).animate({
+                "top": 0,
+                "left": 0
+            }, 100, 'linear', function() {
+                window.location.href = url;
+            });
+        }
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>

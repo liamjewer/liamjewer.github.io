@@ -1,0 +1,198 @@
+#back-vid {
+    backface-visibility: hidden;
+    background-size: cover;
+    bottom: 0;
+    height: auto;
+    min-height: 100vh;
+    min-width: 100vw;
+    perspective: 1000;
+    position: fixed;
+    right: 0;
+    width: auto;
+    z-index: -1;
+}
+
+#header {
+    width: 750px;
+    background-color: #1e1e1e;
+    font-family: BankGothic;
+    text-align: left;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    z-index: 1;
+    border-radius: 25px 0 0 25px;
+    color: #000000;
+}
+
+#header>h3 {
+    margin-top: 0;
+    margin-left: 10px;
+    font-size: 15pt;
+}
+
+#header>h1 {
+    font-size: 40pt;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.line {
+    height: 10px;
+    width: 40%;
+    background-color: #000000;
+    display: inline-block;
+    border-radius: 0 5px 5px 0;
+}
+
+#content {
+    margin-top: 55vh;
+    display: inline-block;
+    width: 100vw;
+}
+
+#animatedText,
+#title>h1,
+#pretext {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 60pt;
+    margin: 0;
+}
+
+#pretext {
+    margin: 0 18pt;
+    color: #ffffff;
+}
+
+#message {
+    text-align: left;
+    padding: 10px;
+    background-color: #000000aa;
+}
+
+#cursor {
+    margin-bottom: -2pt;
+    height: 50pt;
+    width: 5px;
+    background-color: #ffffff;
+    display: inline-block;
+}
+
+.hamBtn {
+    display: none;
+}
+
+
+/*responsiveness*/
+
+@media only screen and (max-width: 1120px) {
+    #content {
+        margin-top: 35vh;
+    }
+}
+
+@media only screen and (max-width: 1063px) {
+    #header {
+        width: 100vw;
+        border-radius: 0;
+    }
+}
+
+
+/*mobile*/
+
+
+/*phones*/
+
+
+/* Portrait */
+
+@media only screen and (max-device-width: 425px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 4) and (orientation: portrait) {
+    #header {
+        width: 100vw;
+        border-radius: 0;
+        height: auto;
+    }
+    #header>h3 {
+        font-size: 10pt;
+    }
+    #header>h1 {
+        font-size: 20pt;
+    }
+    #content {
+        margin-top: 5vh;
+        background: #303030;
+        background-size: 100vw;
+    }
+    #sites {
+        grid-template-columns: 90%;
+        background: none;
+    }
+    #recent {
+        font-size: 35pt;
+    }
+    #pretext,
+    #animatedText {
+        font-size: 40pt;
+    }
+    #message {
+        width: 100vw;
+        border-radius: 0;
+        height: 90pt;
+    }
+    #cursor {
+        height: 40pt;
+        width: 3px;
+    }
+    #pretext {
+        margin-right: 20vw;
+    }
+    #content {
+        margin-top: 100vh;
+    }
+    .hamBtn {
+        display: block;
+    }
+}
+
+
+/* Landscape */
+
+@media only screen and (max-device-height: 425px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 4) and (orientation: landscape) {
+    #content {
+        margin-top: 70vh;
+    }
+    #header {
+        width: 100vw;
+        border-radius: 0;
+        height: auto;
+    }
+    #header>h3 {
+        font-size: 10pt;
+    }
+    #header>h1 {
+        font-size: 20pt;
+    }
+    #recent {
+        font-size: 35pt;
+    }
+    #back-vid {
+        max-width: 100vw;
+        top: 0;
+        left: 0;
+    }
+}
+
+
+/*tablets*/
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 426px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) and (-webkit-max-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 426px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape) {}
