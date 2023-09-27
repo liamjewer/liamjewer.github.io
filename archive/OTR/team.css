@@ -1,0 +1,107 @@
+#content {
+    width: 80%;
+    display: inline-grid;
+    grid-template-columns: repeat(4, 25%);
+    row-gap: 50px;
+    justify-items: center;
+    justify-content: space-evenly;
+    min-height: calc(100vh - 138px);
+}
+
+.personBox {
+    width: 75%;
+    text-decoration: none;
+    padding-top: 150px;
+}
+
+.personBox img {
+    width: 100%;
+    margin: 0;
+    display: block;
+    transition: 0.25s ease-in-out;
+    filter: grayscale(100%);
+}
+
+.personBox:hover img {
+    filter: grayscale(0%);
+}
+
+.bio {
+    text-align: left;
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.bio h1 {
+    color: var(--accent-color);
+    margin: 0;
+}
+
+.bio h3 {
+    color: #003886;
+    margin: 0;
+    font-family: customP;
+    font-size: 16pt;
+    font-weight: bolder;
+}
+
+.bio p {
+    color: white;
+    margin: 0;
+    font-family: customP;
+}
+
+
+/*desktop responsive*/
+
+@media only screen and (max-width: 1300px) {
+    #content {
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #content {
+        grid-template-columns: repeat(1, 100%);
+    }
+}
+
+
+/*mobile*/
+
+
+/*phones*/
+
+
+/* Portrait */
+
+@media only screen and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 4) and (orientation: portrait) {
+    #content {
+        grid-template-columns: repeat(1, 100%);
+    }
+}
+
+
+/* Landscape */
+
+@media only screen and (max-device-height: 812px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 4) and (orientation: landscape) {
+    #content {
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+
+/*tablets*/
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 601px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) and (-webkit-max-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 601px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) and (-webkit-max-device-pixel-ratio: 2) and (orientation: landscape) {}

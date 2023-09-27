@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home - On The Rise</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="res/Favicon.png">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="nav">
+        <a href="home">Home</a>
+        <a href="team">Our Team</a>
+        <a href="contact">Contact</a>
+        <a href="http://store.ontherisepodcast.ca/">Merch</a>
+        <a href="simply%20sports">Simply Sports</a>
+    </div>
+    <div id="hamBtn" class="circle" onclick="clicked();">
+        <div class="nav-icon">
+            <div></div>
+        </div>
+    </div>
+    <a href="home" class="link" id="home">
+        <div class="header">
+            <H2>Home</H2>
+        </div>
+        <div class="circle"><i class="fas fa-home fa-3x"></i></div>
+    </a>
+
+    <a href="team" class="link" id="team">
+        <div class="header">
+            <H2>Our Team</H2>
+        </div>
+        <div class="circle"><i class="fas fa-users fa-3x"></i></i>
+        </div>
+    </a>
+
+    <a href="contact" class="link" id="contact">
+        <div class="header">
+            <H2>Contact</H2>
+        </div>
+        <div class="circle"><i class="fas fa-envelope fa-3x"></i></div>
+    </a>
+
+    <a href="http://store.ontherisepodcast.ca/" class="link" id="merch">
+        <div class="header">
+            <H2>Merch</H2>
+        </div>
+        <div class="circle"><i class="fas fa-tshirt fa-3x"></i></div>
+    </a>
+
+    <a href="simply%20sports" class="link" id="ss">
+        <div class="header">
+            <H2>Simply Sports</H2>
+        </div>
+        <div class="circle"><i class="fas fa-align-left fa-3x"></i></div>
+    </a>
+
+    <div id="recent">
+        <div id="latest">
+            <img src="res/Logo.svg" alt="logo" id="logo">
+            <div id="ico">
+                <a href="https://open.spotify.com/show/4R9X5P0vBfA0MXE7cWvel2?si=BMf3vXdNTAyH__yRJqQxvQ"><i
+                                    class="fab fa-spotify fa-3x"></i></a>
+                <a href="https://www.instagram.com/risepodcast/?hl=en"><i
+                                    class="fab fa-instagram fa-3x"></i></a>
+                <a href="https://twitter.com/rise_podcast"><i class="fab fa-twitter fa-3x"></i></a>
+                <a href="https://discord.gg/AAhguaD"><i class="fab fa-discord fa-3x"></i></a>
+            </div>
+            <h1>Latest Episode</h1>
+            <iframe src="https://open.spotify.com/embed-podcast/show/4R9X5P0vBfA0MXE7cWvel2" width="50%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media" id="ignore"></iframe>
+        </div>
+    </div>
+
+    <!--<div id="allepisodes">
+        <h2>All Episodes</h2>
+        <div id="widgets">
+            <iframe class="dummy"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/1H99kNosZ3HMYR7bRyIut3" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/018SwkmzFvwoxTTsdaZ9ts" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/25CcqAn9y2LQXCN3Gh9F7d" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/5s7dYG6FKuSXIhIlqNsWLr" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/1FQSU5eg7TjKA28kdwcrz6" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/3BhNr0TeYeX9CSNglDtAM9" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/1mg7OyAn23BKtoqGzJa6xZ" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/71Y4N0Pe2vruMwwMON2Nbd" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/5QAxZuoEweqFtbyiCwZvZn" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/6oXl1MJdj3gMFhIEQVPx5B" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/11Yx43et5qcU9ipDVdQvhI" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/1WKKlMBcqFuHHAflSHPqm2" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/0yBkRUmvdmlNMygp8LF1Mp" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/5iaURBFkJokzZPtHx9Ef9v" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/7j7BdoayJrdXvnfmIH2CXQ" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/6YL7ZcEeQGZkghuryFAiy4" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/1qRDBi2nQYxoX8uk4Q15U6" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/01bXhd8PcNgKz6B82dhAV2" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/7qpfTGXyQO2G41aFYWdeyN" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/1wzYn8J6jSC6IGpt2Sf6uN" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/4nIVqEEiwJd0QhCwaa6dpP" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/0GVFcohx0lWqzOHHDLmT8F" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/24biEiA1WJgtbmhpask1KQ" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/5LUiyA2v7MwF9xRv60eqDd" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/4ViNRfQpkfc4HEzBXkUvo2" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/0EufOhoORqyoeOZkPHXPaX" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/5Fx4S0XS95iIVfgNAZHJi2" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/5nqCzaSlLM1gfxYidrnVXM" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/5Fmi3FJ3OqQZaIVfIgyTvk" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/59VD85eIRRkOiJlhm3UnHL" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/5f1H6sGhM4adSYjJPkssRm" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/3I3zucSH02oge5Grtn8PBS" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/4twzi1u1lhFAXBQ16Sh6UD" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/6DW4C44sbSJg7r8s6bVCmX" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/3ZnEe2N6nJgpx8M7Ww4T9g" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/22odnPmBOVlEjvAg0YFbye" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/1etmWBXYUZHNgSblF0KppM" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/6bHd5H9xjoYhVKyTaQuBCW" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/5H7zfDRbGLxeH4fH4qBt3H" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/1ynqeOGDpKmojFNxnUhVcE" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/3VQWCxKpgcdJwL4wLyUReV" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/7tk389Mi4bPhopWQW91cm0" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/210xuDphTzbqXZr2gp4N3L" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/2jmTyZA9YUskG8NNDDQzVG" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/2Qv0EZFvcAiNxaYm4yaYPS" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/3tDbHm6L2mvx2sf9GyWAZz" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/4gTqkD0rbHuVHDyfcmzHYr" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/2MOd5M1JZgIlZpb8ESF8VE" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/3wDJj18KQJ5fwrrRNMU1tl" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/3yCvM3uEyGryenJna3gbgO" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/2pZ9ZMUUYGoPjDNtDLgver" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/7mibEFlL9w4kHn15k2qsTi" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/2Y7qwqlyls4XuthbETlpOU" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/6zWnPwUyhRkcGPDoE3N08O" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/1tDONIKPCLXGAJYrvlq3tL" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/7KR8eICQB8xKdoNSTQLgjN" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/7zglNbVhsP0uX3VfZSPggq" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/28QGbUIGzXheVlyRyeDMA6" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/2hx8eQ2Gw6rAGerVtA0jit" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/6LHVJwyaLO6HpCotPJ3MGQ" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/480MLsVlCqTUoLIyOCHndN" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/7y9wZiq2Q2TMk2LZlOyHBI" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/2SHtx3l9y8ZtrcaF7c30IQ" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/6yKwJl9b7DYOYPiLWLwPVC" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/5NLJuPNdxuQmigJk3HpV9a" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/1oInVcal9IPGFvpPX1tJWU" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/6blFSdnmxiydDSFk9FL7Bc" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/4kBOjm6eHmBXiJZe6GRJds" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/6maMJfDrtgL3P9AsCpEHv6" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/2rJBZv9WCB7Ft7mKYnMZVC" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/6ysnbQDI1uTtT5ThlcySD7" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/2fZpwwF9I9U310KFBW6uVL" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/3jfJHgEN467YuJTOAYlFkA" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/7AFvdEBXH64x1ngEM1sdwq" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/55r6WtFwfPF5v7THIZdHwe" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/5dbaEf2KOU9Aguw5hJJMAs" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/0wnucc8G9Imlu9LbioEN9Q" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/7ETSQ51jlFZTzMsVqfAkGF" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/2x8Xx9z0Fxm8JP6ZicKpqo" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/3sfJb19QhRgmtQf0c1cg47" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/4g7xof4L2juW8TVqtpK51d" width="40%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe class="dummy"></iframe>
+        </div>
+    </div>-->
+    <!--<div id="stats">
+            <div id="statscontent">
+                  <div class="stat">
+                        <h2>followers</h2>
+                        <h1>150</h1>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="stat">
+                        <h2>listeners</h2>
+                        <h1>284</h1>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="stat">
+                        <h2>streams</h2>
+                        <h1>396</h1>
+                  </div>
+            </div>
+      </div>-->
+
+    <div id="footer">
+        <P>
+            Copyright ©
+            <script type="text/javascript">
+                var d = new Date()
+                document.write(d.getFullYear())
+            </script>
+            On The Rise
+        </P>
+        <div id="ico">
+            <a href="https://open.spotify.com/show/4R9X5P0vBfA0MXE7cWvel2?si=BMf3vXdNTAyH__yRJqQxvQ"><i
+                              class="fab fa-spotify fa-2x"></i></a>
+            <a href="https://www.instagram.com/risepodcast/?hl=en"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://twitter.com/rise_podcast"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://discord.gg/AAhguaD"><i class="fab fa-discord fa-2x"></i></a>
+        </div>
+        <div id="LiamJewer">
+            <p style="color: white; margin: 0;">Made by <img height="12pt" src="https://liamjewer.github.io/res/logo.png"> Liam Jewer<br><a href="https://liamjewer.github.io">liamjewer.github.io</a></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script>
+        document.getElementById("widgets").scrollLeft = document.getElementById("widgets").scrollWidth;
+    </script>
+</body>
+
+</html>

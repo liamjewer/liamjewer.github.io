@@ -1,0 +1,49 @@
+[18-Mar-2020 01:57:22 UTC] PHP Notice:  Undefined variable: number in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 2
+[18-Mar-2020 01:57:22 UTC] PHP Warning:  fopen(simplyPublications/SS.txt): failed to open stream: No such file or directory in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 2
+[18-Mar-2020 01:57:22 UTC] PHP Notice:  Undefined variable: date in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 3
+[18-Mar-2020 01:57:22 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 3
+[18-Mar-2020 01:57:22 UTC] PHP Notice:  Undefined variable: time in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 4
+[18-Mar-2020 01:57:22 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 4
+[18-Mar-2020 01:57:22 UTC] PHP Notice:  Undefined variable: author in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 5
+[18-Mar-2020 01:57:22 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 5
+[18-Mar-2020 01:57:22 UTC] PHP Notice:  Undefined variable: post in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 6
+[18-Mar-2020 01:57:22 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 6
+[18-Mar-2020 01:57:22 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 7
+[18-Mar-2020 01:58:03 UTC] PHP Notice:  Undefined variable: number in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 2
+[18-Mar-2020 01:58:03 UTC] PHP Warning:  fopen(simplyPublications/SS.txt): failed to open stream: No such file or directory in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 2
+[18-Mar-2020 01:58:03 UTC] PHP Notice:  Undefined variable: date in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 3
+[18-Mar-2020 01:58:03 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 3
+[18-Mar-2020 01:58:03 UTC] PHP Notice:  Undefined variable: time in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 4
+[18-Mar-2020 01:58:03 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 4
+[18-Mar-2020 01:58:03 UTC] PHP Notice:  Undefined variable: author in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 5
+[18-Mar-2020 01:58:03 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 5
+[18-Mar-2020 01:58:03 UTC] PHP Notice:  Undefined variable: post in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 6
+[18-Mar-2020 01:58:03 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 6
+[18-Mar-2020 01:58:03 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 7
+[18-Mar-2020 16:33:11 UTC] PHP Warning:  fopen(http://ontherisepodcast.ca/res/posts/SS9.txt): failed to open stream: HTTP wrapper does not support writeable connections in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 8
+[18-Mar-2020 16:33:11 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 9
+[18-Mar-2020 16:33:11 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 10
+[18-Mar-2020 16:33:11 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 11
+[18-Mar-2020 16:33:11 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 12
+[18-Mar-2020 16:33:11 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 13
+[18-Mar-2020 16:33:11 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 14
+[18-Mar-2020 16:33:11 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 15
+[18-Mar-2020 16:33:11 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 16
+[18-Mar-2020 16:35:06 UTC] PHP Warning:  fopen(/home/ielxy9ouklzo/public_html/res/posts/SS9.txt): failed to open stream: No such file or directory in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 8
+[18-Mar-2020 16:35:06 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 9
+[18-Mar-2020 16:35:06 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 10
+[18-Mar-2020 16:35:06 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 11
+[18-Mar-2020 16:35:06 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 12
+[18-Mar-2020 16:35:06 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 13
+[18-Mar-2020 16:35:06 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 14
+[18-Mar-2020 16:35:06 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 15
+[18-Mar-2020 16:35:06 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 16
+[18-Mar-2020 16:36:46 UTC] PHP Warning:  fopen(posts/SS9.txt): failed to open stream: No such file or directory in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 8
+[18-Mar-2020 16:36:46 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 9
+[18-Mar-2020 16:36:46 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 10
+[18-Mar-2020 16:36:46 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 11
+[18-Mar-2020 16:36:46 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 12
+[18-Mar-2020 16:36:46 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 13
+[18-Mar-2020 16:36:46 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 14
+[18-Mar-2020 16:36:46 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 15
+[18-Mar-2020 16:36:46 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/createSS.php on line 16

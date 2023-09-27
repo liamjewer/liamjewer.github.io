@@ -1,0 +1,156 @@
+/*phones*/
+/* Portrait */
+@media only screen
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (-webkit-max-device-pixel-ratio: 4)
+  and (orientation: portrait) {
+    #nav_items{
+      display: none;
+    }
+
+    #mobile_nav_items{
+    	width: 100%;
+    	margin: 0 ;
+    	padding: 0;
+      text-align: right;
+      display: block;
+    }
+
+    #nav_logo{
+      width: 200px;
+    }
+
+    #dropdown-mobile{
+      height: 200px;
+      width: 200px;
+      display: inline-block;
+    }
+
+    #dropbtn-mobile{
+      height: 200px;
+      float: right;
+      margin: 0;
+      padding: 0;
+    }
+
+    #banners > h1{
+      font-size: 50px;
+    }
+    #banners > h3{
+      font-size: 25px;
+    }
+
+    .bannerbox{
+        margin-bottom: 25px;
+        border-bottom: 2px solid black;
+      }
+
+      .overlayLeft, .overlayRight{
+        transition-delay: 0.5s;
+      }
+
+      .container:focus .overlayBottomLeft, .container:focus .overlayBottomRight {
+          width: 100%;
+      }
+
+      .text {
+        font-size: 32px;
+      	width: 90%;
+      }
+
+      #as-mobile > a {
+        font-size: 50px;
+      }
+
+}
+
+/* Landscape */
+@media only screen
+  and (max-device-height: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (-webkit-max-device-pixel-ratio: 4)
+  and (orientation: landscape) {
+
+    #nav_items{
+      display: none;
+    }
+
+    #mobile_nav_items{
+    	width: 100%;
+    	margin: 0 ;
+    	padding: 0;
+      text-align: right;
+      display: block;
+    }
+
+    #nav_logo{
+      width: 100px;
+    }
+
+    #dropdown-mobile{
+      height: 100px;
+      width: 100px;
+      display: inline-block;
+    }
+
+    #dropdown-content-mobile{
+      top: 100px;
+    }
+
+    #dropbtn-mobile{
+      height: 100px;
+      float: right;
+      margin: 0;
+      padding: 0;
+    }
+
+    #banners > h1{
+      font-size: 70px;
+    }
+    #banners > h3{
+      font-size: 45px;
+    }
+
+    .bannerbox{
+        margin-bottom: 25px;
+        border-bottom: 2px solid black;
+      }
+
+      .overlayLeft, .overlayRight{
+        transition-delay: 0.5s;
+      }
+
+      .container:focus .overlayBottomLeft, .container:focus .overlayBottomRight {
+          width: 100%;
+      }
+
+      .text {
+        font-size: 32px;
+      	width: 90%;
+      }
+
+    #as-mobile > a {
+      font-size: 25px;
+    }
+}
+/*tablets*/
+/* Portrait */
+@media only screen
+  and (min-device-width: 601px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (-webkit-max-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 601px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (-webkit-max-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}

@@ -1,0 +1,119 @@
+/*phones*/
+/* Portrait */
+@media only screen
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (-webkit-max-device-pixel-ratio: 4)
+  and (orientation: portrait) {
+    #content > h1{
+      font-size: 70px;
+    }
+
+    #content > h3{
+      font-size: 45px;
+    }
+
+    button {
+      width: 90%;
+      font-size: 32px;
+      margin: 50px 0;
+    }
+
+    #filter{
+      text-align: center;
+    }
+
+    #filter > div{
+      text-align: left;
+      width: 90%;
+      display: inline-block;
+    }
+
+    .input{
+      font-size: 60px;
+      width: 90%;
+    }
+
+    .input > input[type = checkbox]{
+      transform: scale(5);
+      width: 10%;
+    }
+
+    #photos > img{
+        width: 100%;
+    }
+
+    #enlarged{
+      width: 90%;
+      height: auto;
+    }
+}
+
+/* Landscape */
+@media only screen
+  and (max-device-height: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (-webkit-max-device-pixel-ratio: 4)
+  and (orientation: landscape) {
+    #content > h1{
+      font-size: 50px;
+    }
+
+    #content > h3{
+      font-size: 25px;
+    }
+
+    button {
+      width: 50%;
+      font-size: 12px;
+      margin: 50px 0;
+    }
+
+    #filter{
+      text-align: center;
+    }
+
+    #filter > div{
+      text-align: left;
+      width:50%;
+      display: inline-block;
+    }
+
+    .input{
+      font-size: 20px;
+      width: 90%;
+    }
+
+    .input > input[type = checkbox]{
+      width: 10%;
+    }
+
+    #photos > img{
+        width: 100%;
+    }
+
+    #enlarged{
+      height: 90%;
+      width: auto;
+    }
+}
+/*tablets*/
+/* Portrait */
+@media only screen
+  and (min-device-width: 601px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (-webkit-max-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 601px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (-webkit-max-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}

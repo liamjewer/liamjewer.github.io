@@ -1,0 +1,267 @@
+@font-face { font-family: custom; src: url('Res/fonts/prime.otf'); }
+@font-face { font-family: customh; src: url('Res/fonts/BankGothic.ttf'); }
+body{
+  background-color: #0f0f0f;
+  font-family: "custom", sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+}
+
+#content{
+  display: inline-block;
+  text-align: center;
+  width: 100vw;
+  margin-top: 10vh;
+}
+
+.fifty{
+  width: 50%;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+
+.fas{
+  color: #ffffff;
+}
+
+.fifty > ul{
+  list-style-type: unset;
+  color: #ffffff;
+  text-align: left;
+  width: 60%;
+  display: inline-block;
+}
+
+.A{
+  width: 30% !important;
+}
+
+.fifty > ul > li, #content > ul > dd{
+  padding-bottom: 10px;
+}
+
+table {
+  font-family: custom;
+  border-collapse: collapse;
+  color: #ffffff;
+  display: inline-block;
+}
+
+td, th {
+  border: 3px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #3b3b3b;
+}
+
+#nav{
+  position: fixed;
+	background-color: #000000;
+	font-size: 18px;
+	width: 100%;
+	display: block;
+  z-index: 1;
+  margin: 0;
+  font-family: customh;
+}
+
+#nav_logo{
+  float: left;
+  width: 55px;
+}
+
+#nav_items{
+	width: 100%;
+	margin: 0 ;
+	padding: 0;
+  text-align: right;
+  display: block;
+}
+
+#nav_items > li{
+	list-style: none;
+	text-align: justify;
+	display: inline-block;
+	padding: 18px 0px 18px 0px;
+  margin: 0;
+  font-weight: bold;
+}
+
+#nav_items > li > a{
+	text-decoration: none;
+	padding: 18px;
+	color: black;
+  font-size: 18px;
+  color: #0059ff;
+}
+
+#nav_items > li > a:hover{
+	color: #0059ff;
+  background: linear-gradient(#0059ff, #000000, #0059ff);
+}
+
+#banners{
+  margin-top: 10vh;
+  width: 100vw;
+  text-align: center;
+}
+#banners > h3{
+  color: #002366;
+}
+
+#PlanA{
+  background-image: url("Res/banners/PlanA.jpg");
+}
+
+#PlanB{
+  background-image: url("Res/banners/PlanB.png");
+}
+
+#Bibliography{
+  background-image: url("Res/banners/Bibliography.jpg");
+}
+
+
+.banner{
+  width: 100%;
+  display: block;
+  border-top: 2px solid black;
+}
+
+#footer{
+  display: block;
+  background-color: #000000;
+}
+
+#copywrite{
+  margin: 0;
+  padding: 12px 0 12px 0;
+  color: white;
+	font-size: 12px;
+	text-align: center;
+}
+
+.bannerbox{
+  width: 100%;
+	position: relative;
+	display: block;
+  overflow: hidden;
+  /* Full height */
+  height: 75vh; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bannerbox:hover{
+  cursor: pointer;
+}
+
+.text {
+  color: inherit;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 2s;
+	text-align: center;
+  width: 100%;
+  color: white;
+}
+
+.text > a{
+  color: #0000a1;
+}
+
+.container{
+  overflow: hidden;
+}
+
+.overlayLeft {
+  position: absolute;
+  opacity: 0;
+  transition:all 0.75s ease;
+  color: black;
+	background-color: #00000090;
+}
+
+.overlayRight {
+  position: absolute;
+  opacity: 0;
+  transition:all 0.75s ease;
+  color: black;
+	background-color: #00000090;
+}
+
+.text > h1{
+	text-align: center;
+	font-weight: bold;
+	color: inherit;
+}
+
+.container:hover .overlayLeft, .container:hover .overlayRight {
+  opacity:  1;
+}
+
+.overlayBottomLeft{
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #00000090;
+}
+
+.overlayBottomRight{
+  width: 100%;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  background-color: #00000090;
+}
+
+.container:hover .overlayBottomLeft, .container:hover .overlayBottomRight {
+  opacity: 1;
+}
+
+h1{
+  font-family: customh;
+  color: #0059ff;
+}
+h2{
+  font-family: customh;
+  color: #002366;
+}
+h3{
+  font-family: customh;
+  color: #002366;
+}
+h4{
+  font-family: customh;
+  color: #002366;
+}
+h5{
+  font-family: customh;
+  color: #002366;
+}
+h6{
+  font-family: customh;
+  color: #002366;
+}
+
+p{
+  font-family: custom;
+  color: #ffffff;
+}

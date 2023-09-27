@@ -1,0 +1,277 @@
+@font-face { font-family: custom; src: url('Res/fonts/prime.otf'); }
+@font-face { font-family: customh; src: url('Res/fonts/BankGothic.ttf'); }
+body{
+  background-color: white;
+  font-family: "custom", sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  position: absolute;
+}
+
+#nav{
+  position: fixed;
+	background-color: #f6f6f6;
+	color: black;
+	font-size: 18px;
+	width: 100%;
+	display: block;
+  z-index: 1;
+  margin: 0;
+  font-family: customh;
+}
+
+#nav_logo{
+  float: left;
+  width: 55px;
+}
+
+#nav_items{
+	width: 100%;
+	margin: 0 ;
+	padding: 0;
+  text-align: right;
+  display: block;
+}
+
+#mobile_nav_items{
+  display: none;
+}
+
+#nav_items > li, #dropdown > li{
+	list-style: none;
+	text-align: justify;
+	display: inline-block;
+	padding: 18px 0px 18px 0px;
+  margin: 0;
+  font-weight: bold;
+}
+
+#nav_items > li > a, #dropdown > li > a{
+	text-decoration: none;
+	padding: 18px;
+	color: black;
+	font-size: 18px;
+}
+
+#nav_items > li > a:hover, #dropdown > li > a:hover{
+	color: #595959;
+	background: linear-gradient(#f6f6f6 70%, #c1c1c1);
+}
+
+#dropbtn {
+	cursor: pointer;
+  text-decoration: none;
+	padding: 18px;
+	color: black;
+	font-size: 18px;
+}
+
+#dropbtn-mobile {
+	cursor: pointer;
+  transition: transform .25s ease-in-out;
+}
+
+#dropdown {
+  display: inline-block;
+}
+
+#dropdown-content {
+		width: 15%;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 160px;
+    z-index: 1;
+    right: 0;
+    height: 0;
+		transition:all 0.8s ease;
+		overflow: hidden;
+    text-align: center;
+}
+
+#dropdown-content-mobile {
+  width: 100%;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 160px;
+  z-index: 1;
+  right: 0;
+  height: 0;
+  transition:all 0.7s ease;
+  overflow: hidden;
+  text-align: center;
+  top: 200px;
+}
+
+#as{
+	width: 100%;
+	position: absolute;
+}
+
+#as > a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+    margin-left: 100%;
+    transition: margin-left 0.2s ease;
+}
+
+#as-mobile{
+	width: 100%;
+	position: absolute;
+}
+
+#as-mobile > a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+		display: inline-block;
+    font-weight: bold;
+    width: 100%;
+    margin-left: 100%;
+    transition: 0.1s ease;
+}
+
+#dropdown-content a:hover {
+	background: linear-gradient(#f6f6f6 70%, #c1c1c1);
+	color: #595959;
+}
+
+#dropdown-content-mobile a:hover {
+	background: linear-gradient(#f6f6f6 70%, #c1c1c1);
+	color: #595959;
+}
+
+#dropdown:hover #dropdown-content {
+	height: 170px;
+}
+
+#dropdown:hover #dropdown-content a{
+  margin-left: 0;
+}
+
+#banners{
+  width: 100%;
+  text-align: center;
+}
+#banners > h3{
+  color: #afafaf;
+}
+
+.banner{
+  width: 100%;
+  display: block;
+  border-top: 2px solid black;
+}
+
+#footer{
+  display: block;
+  background-color: #f6f6f6;
+}
+
+#copywrite{
+  margin: 0;
+  padding: 12px 0 12px 0;
+  color: black;
+	font-size: 12px;
+	text-align: center;
+}
+
+.bannerbox{
+  width: 100%;
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
+
+.bannerbox:hover{
+  cursor: pointer;
+}
+
+.text {
+  color: inherit;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 2s;
+	text-align: center;
+	width: 100%;
+}
+
+.text > a{
+  color: #0000a1;
+}
+
+.container{
+  overflow: hidden;
+}
+
+.overlayLeft {
+  position: absolute;
+  opacity: 0;
+  transition:all 0.75s ease;
+  color: black;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.overlayRight {
+  position: absolute;
+  opacity: 0;
+  transition:all 0.75s ease;
+  color: white;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text > h1{
+	text-align: center;
+	font-weight: bold;
+	color: inherit;
+}
+
+.container:hover .overlayLeft, .container:hover .overlayRight {
+  opacity:  1;
+}
+
+.overlayBottomLeft{
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.overlayBottomRight{
+  width: 100%;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.container:hover .overlayBottomLeft, .container:hover .overlayBottomRight {
+  opacity: 1;
+}
+
+h1{
+  font-family: customh;
+}
+h2{
+  font-family: customh;
+}
+h3{
+  font-family: customh;
+}
+h4{
+  font-family: customh;
+}
+h5{
+  font-family: customh;
+}
+h6{
+  font-family: customh;
+}

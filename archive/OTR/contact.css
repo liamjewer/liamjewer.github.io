@@ -1,0 +1,166 @@
+#content{
+      margin: 150px 0 50px 0;
+      display: grid;
+      grid-template-columns: repeat(2, 40%);
+      row-gap: 50px;
+      justify-items: center;
+      justify-content: space-evenly;
+}
+
+#contactForm{
+      border: 5px solid black;
+      width: 100%;
+      display: inline-block;
+}
+
+#form{
+      width: 100%;
+}
+
+textarea{
+      font-family: customP;
+      font-size: 18pt;
+      border: 3px solid #cccccc;
+      padding: 5px;
+      width: 85%;
+      resize: none;
+      height: 200px;
+}
+
+textarea:focus{
+      border: 1px solid #555;
+}
+
+#personal{
+      border: 5px solid black;
+      width: 100%;
+      display: inline-block;
+      min-width: 325px;
+}
+
+input{
+      margin: 25px 0;
+      width: 80%;
+      font-family: customP;
+      font-size: 18pt;
+}
+
+h1{
+      color: var(--accent-color);
+      margin: 0;
+}
+
+h3{
+      color: #ffffff;
+      margin: 0;
+      font-size: 25pt;
+      font-weight: bolder;
+}
+
+a{
+      color: #003886;
+}
+
+input[type=text], input[type=email]{
+      box-sizing: border-box;
+      background-color: #ffffff;
+      outline: none;
+      border: 1px solid #cdcdcd;
+      border-color: rgba(0, 0, 0, .14);
+}
+
+input[type=text]:focus, input[type=email]:focus{
+      border: 1px solid #555;
+}
+
+input[type=submit]{
+      background-color: var(--accent-color);
+      border: none;
+      border-radius: 10px;
+      color: white;
+      padding: 16px 32px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+      width: 97%;
+      margin-top: 10px;
+}
+
+input[type=submit]:hover{
+      background-color: #003886;
+}
+
+label{
+      color: #ffffff;
+      font-size: 18pt;
+}
+
+.person{
+      margin: 25px 0;
+}
+
+#message{
+      margin: 40vh 0;
+      height: 20vh;
+}
+
+#message > h1{
+      font-size: 50pt;
+}
+
+/*desktop responsive*/
+@media only screen
+   and (max-width: 1175px){
+      #content{
+            grid-template-columns: repeat(1, 100%);
+      }
+      #personal{
+            width: 80%;
+      }
+   }
+
+/*mobile*/
+/*phones*/
+/* Portrait */
+@media only screen
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (-webkit-max-device-pixel-ratio: 4)
+and (orientation: portrait) {
+      #content{
+            grid-template-columns: repeat(1, 100%);
+      }
+      #personal{
+            width: 80%;
+      }
+}
+
+/* Landscape */
+@media only screen
+and (max-device-height: 812px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (-webkit-max-device-pixel-ratio: 4)
+and (orientation: landscape) {
+    
+}
+
+/*tablets*/
+/* Portrait */
+@media only screen
+and (min-device-width: 601px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1)
+and (-webkit-max-device-pixel-ratio: 2)
+and (orientation: portrait) {
+    
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 601px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1)
+and (-webkit-max-device-pixel-ratio: 2)
+and (orientation: landscape) {
+    
+}

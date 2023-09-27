@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Upload - On The Rise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="http://ontherisepodcast.ca/res/Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <form method="post" action="createSS.php">
+        <label for="date">Date to be Uploaded: </label>
+        <br>
+        <input type="date" name="date">
+        <br>
+        <label for="time">Time to be Uploaded: </label>
+        <br>
+        <input type="time" name="time">
+        <br>
+        <label for="author">Author: </label>
+        <br>
+        <input type="text" name="author">
+        <br>
+        <label for="number">publication number: </label>
+        <br>
+        <input type="number" name="number">
+        <br>
+        <label for="post">Post Body: </label>
+        <br>
+        <textarea name="post" cols="100" rows="50" id="area"></textarea>
+        <br>
+        <div id="link">
+            <label for="text">link text: </label>
+            <input type="text" name="text" id="text">
+            <br>
+            <label for="address">link address: </label>
+            <input type="text" name="address" id="address">
+            <br>
+            <input type="button" value="add link" onclick="appendLink();">
+        </div>
+        <div id="imageUp">
+            <label for="alt">Alt text (description): </label>
+            <input type="text" name="alt" id="alt">
+            <br>
+            <label for="image">upload Image: </label>
+            <input type="file" name="image" id="image">
+            <br>
+            <input type="button" value="add image" onclick="appendImage();">
+        </div>
+        <br>
+        <input type="submit" name="submit" value="upload" class="submit-button">
+        <Script>
+            function appendLink() {
+                document.getElementById("area").value += "<a href=\"" + document.getElementById("address").value + "\">" + document.getElementById("text").value + "</a>";
+            }
+        </Script>
+</body>
+
+</html>

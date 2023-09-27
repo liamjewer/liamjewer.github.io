@@ -1,0 +1,304 @@
+:root {
+      --primary-color: #ffffff;
+      --secondary-color: #1b1b1b;
+      --accent-color: #0047ab;
+      --hover: #003279;
+}
+
+@font-face { font-family: custom; src: url('res/fonts/Hindenburg.ttf'); }
+@font-face { font-family: customP; src: url('res/fonts/Century\ Gothic.ttf'); }
+
+body{
+      margin: 0;
+      text-align: center;
+      overflow-x: hidden;
+      font-family: custom;
+      background-color: #262626;
+}
+
+html{
+      overflow-x: hidden;
+}
+
+#nav{
+      width: 100vw;
+      text-align: center;
+      position: absolute;
+      z-index: 1;
+      background-color: #1b1b1be7;
+      padding: 15px 0;
+}
+
+#nav > a{
+      text-decoration: none;
+      position: relative;
+      font-size: 20pt;
+      color: var(--accent-color);
+      margin: 0 4%;
+      padding: 5px 0;
+}
+
+#nav > a:hover{
+      color: var(--hover);
+      cursor: pointer;
+}
+
+#nav > a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--hover);
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.25s ease-in-out 0s;
+      transition: all 0.25s ease-in-out 0s;
+}
+
+#nav > a:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+}
+
+#hamBtn{
+      background-color: #0047ab;
+      position: fixed;
+      bottom: 5px;
+      left: 5px;
+      display: none;
+      cursor: pointer;
+      z-index: 3;
+}
+
+.nav-icon {
+      margin: auto;
+      width: 50px;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+
+.nav-icon:after, .nav-icon:before, .nav-icon div {
+      background-color: #fff;
+      border-radius: 4px;
+      content: '';
+      display: block;
+      height: 6px;
+      margin: 9px 0;
+      transition: all .4s ease-in-out;
+}
+
+.open:before {
+      transform: translateY(15px) rotate(-135deg);
+}
+
+.open:after {
+      transform: translateY(-15px) rotate(135deg);
+}
+
+.open div {
+      transform: rotateY(90deg);
+}
+
+#home{
+      bottom: 85px;
+      left: 0;
+      transition-delay: 0;
+}
+#team{
+      bottom: 165px;
+      left: 0;
+      transition-delay: 0.1s;
+}
+#contact{
+      bottom: 245px;
+      left: 0;
+      transition-delay: 0.2s;
+}
+#merch{
+      bottom: 325px;
+      left: 0;
+      transition-delay: 0.3s;
+}
+#ss{
+      bottom: 405px;
+      left: 0;
+      transition-delay: 0.4s;
+}
+#home > .circle{
+      background-color: #0055cc;
+      margin-right: 5px;
+}
+#team > .circle{
+      background-color: #006aff;
+      margin-right: 5px;
+}
+#episodes > .circle{
+      background-color: #3388ff;
+      margin-right: 5px;
+}
+#contact > .circle{
+      background-color: #66a6ff;
+      margin-right: 5px;
+}
+#merch > .circle{
+      background-color: #99c3ff;
+      margin-right: 5px;
+}
+#ss > .circle{
+      background-color: #b3d2ff;
+      margin-right: 5px;
+}
+
+.circle > i{
+      line-height: 70px;
+}
+
+.circle{
+      width: 66px;
+      height: 66px;
+      border-radius: 35px;
+      float: right;
+      color: var(--primary-color);
+      text-align: center;
+      border: 2px solid var(--secondary-color);
+}
+
+.link{
+      height: 70px;
+      width: 0;
+      overflow: hidden;
+      position: fixed;
+      color: var(--primary-color);
+      transition: width 0.1s ease-in-out;
+      z-index: 1;
+      background-color: #000000e3;
+}
+
+.header{
+      margin: 0;
+      float: left;
+      width: 110px;
+      text-align: right;
+}
+
+h2{
+      line-height: 70px;
+      margin: 0;
+      letter-spacing: 3px;
+}
+
+#footer{
+      background-color: var(--secondary-color);
+      color: var(--accent-color);
+}
+
+#footer > p{
+      padding-top: 20px;
+      margin-top: 0;
+}
+
+#ico{
+      padding-bottom: 20px;
+}
+
+#ico:hover{
+      padding-left: 100px;
+      padding-right: 100px;
+}
+
+#ico > a{
+      color: var(--accent-color);
+      margin: 0 5px;
+      transition: 0.25s ease-in-out;
+}
+
+#ico > a:hover{
+      color: var(--hover);
+      padding-left: 20px;
+      padding-right: 20px;
+}
+
+::-webkit-scrollbar {
+      width: 10px;
+}
+
+::-webkit-scrollbar-track {
+      background: #3a3a3a; 
+}
+
+::-webkit-scrollbar-thumb {
+      background: #272727;
+      border-radius: 1vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+      background: #000000;
+}
+/*desktop responsive*/
+@media only screen
+  and (max-width: 420px){
+      #nav{
+            display: none;
+      }
+      #hamBtn{
+            display: block;
+      }
+  }
+
+/*mobile*/
+/*phones*/
+/* Portrait */
+@media only screen
+  and (max-device-width: 425px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (-webkit-max-device-pixel-ratio: 4)
+  and (orientation: portrait) {
+      #nav{
+            display: none;
+      }
+      #hamBtn{
+            display: block;
+      }
+}
+
+/* Landscape */
+@media only screen
+  and (max-device-height: 425px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (-webkit-max-device-pixel-ratio: 4)
+  and (orientation: landscape) {
+      #nav{
+            display: none;
+      }
+      #hamBtn{
+            display: block;
+      }
+}
+
+/*tablets*/
+/* Portrait */
+@media only screen
+  and (min-device-width: 426px)
+  and (max-device-width: 768px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (-webkit-max-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 426px)
+  and (max-device-width: 768px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (-webkit-max-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}

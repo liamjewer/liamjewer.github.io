@@ -1,0 +1,10 @@
+AuthType Basic  
+AuthName "Restricted Area"  
+AuthUserFile /home/ielxy9ouklzo/public_html/upload.ontherisepodcast.ca/.htpasswd
+require valid-user
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
